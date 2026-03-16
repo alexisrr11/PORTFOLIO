@@ -4,18 +4,20 @@ const btnVerMas = document.getElementById("btn-ver-mas");
 const contenedorVerMas = document.getElementById("ver-mas");
 const btnCerrarModal = document.getElementById("btn-cerrar-modal");
 const modalProyectos = document.getElementById("modal-proyectos");
+const btnCerrarDatos = document.getElementById("btn-cerrar-datos");
+const modalDatos = document.getElementById("modal-datos");
+const btnAbrirDatos = document.getElementById("btn-abrir-datos");
 
-btnMenu.addEventListener("click", () => {
-    contendorMenu.classList.toggle("hidden");
-});
+function abrirCerrar (btn, contendor){
+    btn.addEventListener("click", () => {
+        contendor.classList.toggle("hidden");
+    });
+};
 
-btnCerrarModal.addEventListener("click", () => {
-    modalProyectos.classList.add("hidden");
-});
-
-btnCerrarModal.addEventListener("click", () => {
-    modalProyectos.classList.add("hidden");
-});
+abrirCerrar(btnMenu, contendorMenu);
+abrirCerrar(btnCerrarModal, modalProyectos);
+abrirCerrar(btnAbrirDatos, modalDatos);
+abrirCerrar(btnCerrarDatos, modalDatos);
 
 btnVerMas.addEventListener("click", () => {
     contenedorVerMas.classList.toggle("hidden");
@@ -99,5 +101,13 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             ticking = true;
         }
+    });
+});
+
+// Al hacer click, scrollea hasta el final del viewport
+document.getElementById("scrollDownBtn").addEventListener("click", () => {
+    window.scrollBy({
+        top: window.innerHeight, // baja una pantalla completa (100vh)
+        behavior: "smooth"
     });
 });

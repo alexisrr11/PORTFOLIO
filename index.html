@@ -8,7 +8,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-
             --s: 37px;
             /* control the size*/
             --c1: #050b0f;
@@ -24,7 +23,22 @@
                 var(--g3) var(--s) 0, var(--g3) 0 calc(1.73*var(--s)) var(--c2);
             background-size: calc(2*var(--s)) calc(3.46*var(--s));
             font-family: 'cursive', sans-serif;
+        }
 
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-bounce-slow {
+            animation: float 2s ease-in-out infinite;
         }
     </style>
     <!-- Basic Icons -->
@@ -97,11 +111,23 @@
                     para alcanzar los objetivos de cada proyecto, sin perder de vista la experiencia del
                     usuario y el impacto real de la solución.
                 </p>
-                <button class="bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
-                hover:text-gray-900 hover:bg-gray-50
-                hover:font-semibold">
-                    <i class="bxf bx-arrow-out-down-square-half text-xl text-green-400 font-semibold"></i>
-                    Descargar CV
+                <div class="flex justify-center gap-4">
+                    <button id="btn-abrir-datos" class="bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
+                    hover:text-gray-900 hover:bg-gray-50
+                    hover:font-semibold">
+                        <i class="bxf bx-user-search text-xl text-blue-400 font-semibold"></i>
+                        Mis datos
+                    </button>
+                    <button id="descargar-cv" class="bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
+                    hover:text-gray-900 hover:bg-gray-50
+                    hover:font-semibold">
+                        <i class="bxf bx-arrow-out-down-square-half text-xl text-green-400 font-semibold"></i>
+                        Descargar CV
+                    </button>
+                </div>
+                <button id="scrollDownBtn"
+                    class="text-center text-white text-4xl mt-6">
+                    <i class='bx bx-chevrons-down animate-bounce-slow'></i>
                 </button>
             </div>
         </div>
@@ -224,14 +250,14 @@
                         <h3 class="text-xl font-semibold text-gray-100 mb-3">App Turnero</h3>
                         <img src="./images/app turnos.png" alt="App Turnero" class="h-44 w-auto mx-auto rounded-md">
                     </div>
-                    <p class="pt-4 text-sm text-blue-400 text-start">Ver detalles</p>
+                    <p class="pt-4 text-sm text-blue-400 text-start font-semibold">Ver detalles</p>
                 </button>
                 <button id="btn-e-commerce" class="bg-gray-800 p-6 rounded-lg shadow-md">
                     <div class="hover:scale-110 transform transition-transform duration-1000">
                         <h3 class="text-xl font-semibold text-gray-100 mb-3">E-commerce</h3>
                         <img src="./images/e-commerce.png" alt="Suturn bike" class="h-44 w-auto mx-auto rounded-md">
                     </div>
-                    <p class="pt-4 text-sm text-blue-400 text-start">Ver detalles</p>
+                    <p class="pt-4 text-sm text-blue-400 text-start font-semibold">Ver detalles</p>
                 </button>
                 <button id="btn-app-todo" class="bg-gray-800 p-6 rounded-lg shadow-md">
                     <div class="hover:scale-110 transform transition-transform duration-1000">
@@ -239,7 +265,7 @@
                         <img src="./images/app market.png" alt="App ToDo multi-usuarios"
                             class="h-44 w-auto mx-auto rounded-md">
                     </div>
-                    <p class="pt-4 text-sm text-blue-400 text-start">Ver detalles</p>
+                    <p class="pt-4 text-sm text-blue-400 text-start font-semibold">Ver detalles</p>
                 </button>
             </div>
         </div>
@@ -272,6 +298,17 @@
             </div>
         </div>
     </section>
+    <div id="modal-datos" class="hidden fixed top-6 h-[90vh] w-full bg-gray-900 text-center p-6 z-50">
+        <button id="btn-cerrar-datos" class="fixed top-10 right-6 font-bold text-xl">x</button>
+        <h2 class="text-3xl font-semibold">Datos Personales</h2>
+        <div class="text-start text-gray-300">
+            <h3 class="">Ubicación: <span class="font-semibold text-white">Buenos Aires, Argentina</span></h3>
+            <h3 class="pt-3">Tiempo de preparación: <span class="font-semibold text-white">2 Años</span></h3>
+            <h3 class="pt-3">Trabajo Actual: <span class="font-semibold text-white">Freelance</span></h3>
+            <h3 class="pt-3">Edad: <span class="font-semibold text-white">30</span></h3>
+        </div>
+    </div>
+
     <div id="modal-proyectos" class="hidden fixed top-6 h-[90vh] w-full bg-gray-900 z-50">
         <button id="btn-cerrar-modal" class="fixed top-10 right-6 font-bold text-xl">x</button>
         <div id="contendor-proyecto"></div>
