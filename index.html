@@ -8,7 +8,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
+
+            --s: 37px;
+            /* control the size*/
+            --c1: #050b0f;
+            --c2: #020e3b;
+
+            --c: #0000, var(--c1) .5deg 119.5deg, #0000 120deg;
+            --g1: conic-gradient(from 60deg at 56.25% calc(425%/6), var(--c));
+            --g2: conic-gradient(from 180deg at 43.75% calc(425%/6), var(--c));
+            --g3: conic-gradient(from -60deg at 50% calc(175%/12), var(--c));
+            background:
+                var(--g1), var(--g1) var(--s) calc(1.73*var(--s)),
+                var(--g2), var(--g2) var(--s) calc(1.73*var(--s)),
+                var(--g3) var(--s) 0, var(--g3) 0 calc(1.73*var(--s)) var(--c2);
+            background-size: calc(2*var(--s)) calc(3.46*var(--s));
             font-family: 'cursive', sans-serif;
+
         }
     </style>
     <!-- Basic Icons -->
@@ -46,14 +62,15 @@
     </nav>
 
     <!-- Hero / Acerca de mí -->
-    <section id="acerca" class="pt-24 pb-12 bg-gray-800">
+    <section id="acerca" class="pt-24 pb-12 bg-gray-900/70">
         <div class="max-w-7xl mx-auto py-2 px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <img src="https://alexisrr11.github.io/RodriguezAlexis/images/alexisfoto.png" alt="Foto de perfil"
                     class="w-40 h-40 rounded-full border-2 border-blue-600/70 mx-auto mb-4">
                 <h2 class="text-4xl font-bold text-gray-100 mb-4">Hola, soy Rodriguez Alexis</h2>
-                <h3 class="text-xl text-gray-300 mb-6">Desarrollador Full-Stack con leve orientación al
-                    Front-End</h3>
+                <h3 class="text-xl text-gray-300 mb-6">
+                    Desarrollador Full-Stack con leve orientación al Front-End
+                </h3>
                 <!--    
                 <div class="text-gray-400 max-w-2xl mx-auto mb-4">
                     <h3>Ubicación: <span class="text-gray-100 mt-3 font-semibold">Buenos Aires, Argentina</span></h3>
@@ -80,8 +97,7 @@
                     para alcanzar los objetivos de cada proyecto, sin perder de vista la experiencia del
                     usuario y el impacto real de la solución.
                 </p>
-                <button 
-                class="bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
+                <button class="bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
                 hover:text-gray-900 hover:bg-gray-50
                 hover:font-semibold">
                     <i class="bxf bx-arrow-out-down-square-half text-xl text-green-400 font-semibold"></i>
@@ -93,7 +109,7 @@
     </section>
 
     <!-- Habilidades -->
-    <section id="skills" class="py-12 bg-gray-800">
+    <section id="skills" class="py-12 bg-gray-800/90 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center text-gray-100 mb-8">Mis Habilidades</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -140,7 +156,7 @@
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-blue-400 bxl bx-postgresql"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">PostgreSQL</h3>
-                <!--
+                    <!--
                     <p class="text-gray-300"> Diseño y gestión de bases de datos relacionales con PostgreSQL,
                         creación de tablas y relaciones, consultas SQL, manejo de transacciones
                         y control de integridad de datos en aplicaciones backend.</p>
@@ -199,7 +215,7 @@
     </section>
 
     <!-- Proyectos -->
-    <section id="proyectos" class="py-12 bg-gray-900">
+    <section id="proyectos" class="py-12 bg-gray-900/70">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center text-gray-100 mb-8">Proyectos Destacados</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -230,7 +246,7 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="py-12 bg-gray-800">
+    <section id="contacto" class="py-12 bg-gray-800/90 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center text-gray-100 mb-8">Contacto</h2>
             <div class="max-w-md mx-auto">
@@ -262,7 +278,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-blue-900/20 text-white py-4">
+    <footer class="bg-gray-900/90 backdrop-blur-sm text-white py-4">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p>&copy; 2026 <b>Alexis Rodriguez</b>. Todos los derechos reservados.</p>
         </div>
