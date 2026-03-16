@@ -2,9 +2,19 @@ const btnMenu = document.getElementById("btn-menu");
 const contendorMenu = document.getElementById("contendor-menu");
 const btnVerMas = document.getElementById("btn-ver-mas");
 const contenedorVerMas = document.getElementById("ver-mas");
+const btnCerrarModal = document.getElementById("btn-cerrar-modal");
+const modalProyectos = document.getElementById("modal-proyectos");
 
 btnMenu.addEventListener("click", () => {
     contendorMenu.classList.toggle("hidden");
+});
+
+btnCerrarModal.addEventListener("click", () => {
+    modalProyectos.classList.add("hidden");
+});
+
+btnCerrarModal.addEventListener("click", () => {
+    modalProyectos.classList.add("hidden");
 });
 
 btnVerMas.addEventListener("click", () => {
