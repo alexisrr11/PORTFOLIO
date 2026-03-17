@@ -1,6 +1,3 @@
-//import  from "module";
-//import  from "module";
-
 const btnMenu = document.getElementById("btn-menu");
 const contendorMenu = document.getElementById("contendor-menu");
 const btnVerMas = document.getElementById("btn-ver-mas");
@@ -10,6 +7,10 @@ const modalProyectos = document.getElementById("modal-proyectos");
 const btnCerrarDatos = document.getElementById("btn-cerrar-datos");
 const modalDatos = document.getElementById("modal-datos");
 const btnAbrirDatos = document.getElementById("btn-abrir-datos");
+const btnIdiomasFull = document.getElementById("btn-idiomas-full");
+const btnIdiomaMd = document.getElementById("btn-idiomas-md");
+const modalIdiomasFull = document.getElementById("modal-idiomas-full");
+const modalIdiomasMd = document.getElementById("modal-idiomas-md");
 
 function abrirCerrar (btn, contendor){
     btn.addEventListener("click", () => {
@@ -21,6 +22,8 @@ abrirCerrar(btnMenu, contendorMenu);
 abrirCerrar(btnCerrarModal, modalProyectos);
 abrirCerrar(btnAbrirDatos, modalDatos);
 abrirCerrar(btnCerrarDatos, modalDatos);
+abrirCerrar(btnIdiomasFull, modalIdiomasFull);
+abrirCerrar(btnIdiomaMd, modalIdiomasMd);
 
 btnVerMas.addEventListener("click", () => {
     contenedorVerMas.classList.toggle("hidden");
