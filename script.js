@@ -1,3 +1,6 @@
+//import  from "module";
+//import  from "module";
+
 const btnMenu = document.getElementById("btn-menu");
 const contendorMenu = document.getElementById("contendor-menu");
 const btnVerMas = document.getElementById("btn-ver-mas");
