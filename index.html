@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de desarrollador Full-Stack">
     <title>Portafolio - Desarrollador Full-Stack</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="./destacados/cardTurnero.js"></script>
     <script type="module" src="./destacados/cardE-commerce.js"></script>
     <script type="module" src="./destacados/cardMultiUser.js"></script>
+    <script type="module" src="./idiomas/i18n.js"></script>
     <style>
         body {
             --s: 37px;
@@ -62,44 +64,44 @@
                     <i class="bx bx-menu-select flex items-center text-3xl text-white"></i>
                 </button>
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="#acerca" class="text-gray-300 hover:text-blue-400">Acerca de mí</a>
-                    <a href="#skills" class="text-gray-300 hover:text-blue-400">Habilidades</a>
-                    <a href="#proyectos" class="text-gray-300 hover:text-blue-400">Proyectos</a>
-                    <a href="#contactos" class="text-gray-300 hover:text-blue-400">Contactos</a>
+                    <a data-i18n="nav.about" href="#acerca" class="text-gray-300 hover:text-blue-400">Acerca de mí</a>
+                    <a data-i18n="nav.skills" href="#skills" class="text-gray-300 hover:text-blue-400">Habilidades</a>
+                    <a data-i18n="nav.projects" href="#proyectos" class="text-gray-300 hover:text-blue-400">Proyectos</a>
+                    <a data-i18n="nav.contact" href="#contactos" class="text-gray-300 hover:text-blue-400">Contactos</a>
                     <button id="btn-idiomas-full" class="flex items-center text-2xl hover:text-blue-400">
                         <i class="bxf bx-translate"></i>
                         <i class="bxf bx-caret-big-down text-sm"></i>
                     </button>
                     <div id="modal-idiomas-full" class="hidden flex gap-4 bg-gray-800 p-2 rounded-lg absolute top-[65px] right-5">
-                        <button>
+                        <button class="lang-btn" data-lang="es">
                             <img class="w-6" src="./images/espana.png" alt="">
                         </button>
-                        <button>
+                        <button class="lang-btn" data-lang="en">
                             <img class="w-6" src="./images/reino-unido.png" alt="">
                         </button>
-                        <button>
+                        <button class="lang-btn" data-lang="pt">
                             <img class="w-6 h-[18px] rounded-sm" src="./images/portugal.png" alt="">
                         </button>
                     </div>
                 </div>
                 <div id="contendor-menu"
                     class="hidden md:hidden flex flex-col gap-3 bg-gray-900 absolute top-16 left-0 rounded-md shadow-lg p-2 w-full h-auto">
-                    <a href="#acerca" class="text-gray-300 hover:text-blue-400">Acerca de mí</a>
-                    <a href="#skills" class="text-gray-300 hover:text-blue-400">Habilidades</a>
-                    <a href="#proyectos" class="text-gray-300 hover:text-blue-400">Proyectos</a>
-                    <a href="#contactos" class="text-gray-300 hover:text-blue-400">Contactos</a>
+                    <a data-i18n="nav.about" href="#acerca" class="text-gray-300 hover:text-blue-400">Acerca de mí</a>
+                    <a data-i18n="nav.skills" href="#skills" class="text-gray-300 hover:text-blue-400">Habilidades</a>
+                    <a data-i18n="nav.projects" href="#proyectos" class="text-gray-300 hover:text-blue-400">Proyectos</a>
+                    <a data-i18n="nav.contact" href="#contactos" class="text-gray-300 hover:text-blue-400">Contactos</a>
                     <button id="btn-idiomas-md" class="flex items-center text-2xl hover:text-blue-400">
                         <i class="bxf bx-translate"></i>
                         <i class="bxf bx-caret-big-down text-sm"></i>
                     </button>
                     <div id="modal-idiomas-md" class="hidden flex items-center gap-2">
-                        <button>
+                        <button class="lang-btn" data-lang="es">
                             <img class="w-6" src="./images/espana.png" alt="">
                         </button>
-                        <button>
+                        <button class="lang-btn" data-lang="en">
                             <img class="w-6" src="./images/reino-unido.png" alt="">
                         </button>
-                        <button>
+                        <button class="lang-btn" data-lang="pt">
                             <img class="w-6 h-[18px] rounded-sm" src="./images/portugal.png" alt="">
                         </button>
                     </div>
@@ -114,26 +116,20 @@
             <div class="text-center">
                 <img src="https://alexisrr11.github.io/RodriguezAlexis/images/alexisfoto.png" alt="Foto de perfil"
                     class="w-40 h-40 rounded-full border-2 border-blue-600/70 mx-auto mb-4">
-                <h2 class="text-4xl font-bold text-gray-100 mb-4">Hola, soy Rodriguez Alexis</h2>
-                <h3 class="text-xl text-gray-300 mb-6">
+                <h2 data-i18n="hero.title" class="text-4xl font-bold text-gray-100 mb-4">Hola, soy Rodriguez Alexis</h2>
+                <h3 data-i18n="hero.subtitle" class="text-xl text-gray-300 mb-6">
                     Desarrollador Full-Stack con leve orientación al Front-End
                 </h3>
-                <!--    
-                <div class="text-gray-400 max-w-2xl mx-auto mb-4">
-                    <h3>Ubicación: <span class="text-gray-100 mt-3 font-semibold">Buenos Aires, Argentina</span></h3>
-                    <h3>Tiempo de experiencia: <span class="text-gray-100 mt-3 font-semibold">2 Años</span></h3>
-                    <h3>Trabajo actual: <span class="text-gray-100 mt-3 font-semibold">Freelance</span></h3>
-                    <h3>Edad: <span class="text-gray-100 font-semibold">30</span></h3>
-                </div>
-                -->
                 <p class="text-gray-400 max-w-2xl mx-auto">
-                    Me apasiona construir aplicaciones completas, tanto en la parte técnica
-                    como en el modelo de negocio detrás de cada proyecto. Creo interfaces modernas
-                    y disfruto más diseñar experiencias del lado del usuario, como también sé crear
-                    endpoints y arquitecturas MVC sólidas aplicando POO en Node.js.
-                    <button id="btn-ver-mas" class="text-blue-400 hover:text-blue-500">Ver más</button>
+                    <span data-i18n="hero.descripcion.uno">
+                        Me apasiona construir aplicaciones completas, tanto en la parte técnica
+                        como en el modelo de negocio detrás de cada proyecto. Creo interfaces modernas
+                        y disfruto más diseñar experiencias del lado del usuario, como también sé crear
+                        endpoints y arquitecturas MVC sólidas aplicando POO en Node.js.
+                    </span>
+                    <button data-i18n="hero.more" id="btn-ver-mas" class="inline text-blue-400 hover:text-blue-500">Ver más</button>
                 </p>
-                <p id="ver-mas" class="hidden text-gray-400 max-w-2xl mx-auto">
+                <p data-i18n="hero.descripcion.dos" id="ver-mas" class="hidden text-gray-400 max-w-2xl mx-auto">
                     Uno de mis mayores aprendizajes fue el desarrollo de un sistema multi-tenant de gestión de
                     turnos,
                     donde perfeccioné mi capacidad para diseñar arquitecturas robustas y tomar decisiones
@@ -174,61 +170,30 @@
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-yellow-400 bxl bx-javascript"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">JavaScript</h3>
-                    <!--
-                        <p class="text-gray-300">Desarrollo de aplicaciones web interactivas, manejo del DOM, consumo de
-                            APIs y lógica de negocio.</p>
-                    -->
                 </div>
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-blue-400 bxl bx-react"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">React</h3>
-                    <!--
-                        <p class="text-gray-300">Construcción de interfaces con componentes reutilizables,
-                            manejo de estado con useState, renderizado condicional,
-                            listas dinámicas con keys y consumo de APIs mediante useEffect.</p>
-                    -->
                 </div>
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-blue-400 bxl bx-tailwind-css"></i>
                     <i class="text-6xl text-blue-500 bxl bx-css3"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">Tailwind CSS & CSS3</h3>
-                    <!--
-                        <p class="text-gray-300">Diseño avanzado de interfaces,
-                            creación de layouts responsivos con Flexbox y Grid,
-                            componentes reutilizables y optimización de estilos
-                            para aplicaciones web modernas.</p>
-                    -->
                 </div>
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-green-400 bxl bx-nodejs"></i>
                     <i class="text-6xl text-gray-400 bxl bx-express-js"></i>
                     <i class="text-6xl text-red-400 bxl bx-npm"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">Node.js, Express & npm</h3>
-                    <!--
-                        <p class="text-gray-300">Desarrollo de APIs REST con Node.js y Express, organización del backend
-                            con arquitectura modular basada en rutas, controladores y servicios.
-                            Implementación de middlewares, configuración de conexiones a base de datos,
-                            manejo básico de errores y gestión de dependencias con npm.</p>
-                    -->
                 </div>
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-blue-400 bxl bx-postgresql"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">PostgreSQL</h3>
-                    <!--
-                    <p class="text-gray-300"> Diseño y gestión de bases de datos relacionales con PostgreSQL,
-                        creación de tablas y relaciones, consultas SQL, manejo de transacciones
-                        y control de integridad de datos en aplicaciones backend.</p>
-                -->
                 </div>
                 <div>
                     <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                         <i class="text-6xl text-orange-500 bxl bx-git"></i>
                         <h3 class="text-xl font-semibold text-gray-100 mb-2">Git</h3>
-                        <!--
-                            <p class="text-gray-300">Control de versiones con Git, gestión de repositorios y ramas,
-                                seguimiento de cambios mediante commits y sincronización de
-                                proyectos con GitHub utilizando push y pull..</p>
-                        -->
                     </div>
                 </div>
             </div>
@@ -244,23 +209,11 @@
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-blue-500 bxl bx-typescript"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">TypeScript</h3>
-                    <!--
-                        <p class="text-gray-300">
-                            Aprendiendo tipado estático en JavaScript, interfaces,
-                            tipos y su integración en proyectos con Node.js y React.
-                        </p>
-                    -->
                 </div>
 
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-purple-400 bxl bx-prisma-orm"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">Prisma ORM</h3>
-                    <!--
-                        <p class="text-gray-300">
-                            Conocimiento básico del uso de Prisma ORM mediante modelos
-                            y consultas basadas en objetos.
-                        </p>
-                    -->
                 </div>
 
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">

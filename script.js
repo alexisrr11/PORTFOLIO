@@ -1,7 +1,5 @@
 const btnMenu = document.getElementById("btn-menu");
 const contendorMenu = document.getElementById("contendor-menu");
-const btnVerMas = document.getElementById("btn-ver-mas");
-const contenedorVerMas = document.getElementById("ver-mas");
 const btnCerrarModal = document.getElementById("btn-cerrar-modal");
 const modalProyectos = document.getElementById("modal-proyectos");
 const btnCerrarDatos = document.getElementById("btn-cerrar-datos");
@@ -24,11 +22,6 @@ abrirCerrar(btnAbrirDatos, modalDatos);
 abrirCerrar(btnCerrarDatos, modalDatos);
 abrirCerrar(btnIdiomasFull, modalIdiomasFull);
 abrirCerrar(btnIdiomaMd, modalIdiomasMd);
-
-btnVerMas.addEventListener("click", () => {
-    contenedorVerMas.classList.toggle("hidden");
-    btnVerMas.textContent = contenedorVerMas.classList.contains("hidden") ? "Ver más" : "Ver menos";
-});
 
 document.addEventListener('DOMContentLoaded', function () {
     // Manejar el envío del formulario de contacto
