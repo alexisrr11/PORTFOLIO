@@ -14,7 +14,7 @@ const translations = {
         "hero.descripcion.uno": "Me apasiona construir aplicaciones completas, tanto en la parte técnica como en el modelo de negocio detrás de cada proyecto. Creo interfaces modernas y disfruto más diseñar experiencias del lado del usuario, como también sé crear endpoints y arquitecturas MVC sólidas aplicando POO en Node.js.",
         "hero.more": "Ver más",
         "hero.less": "Ver menos",
-        "hero.descripcion.dos": "Uno de mis mayores aprendizajes fue el desarrollo de un sistema multi-tenant de gestión de turnos, donde perfeccioné mi capacidad para diseñar arquitecturas robustas y tomar decisionesestratégicas antes de iniciar un MVP. Este proceso me enseñó a transformar ideas en soluciones claras y estructuradas. Lo que me diferencia es mi constancia y resiliencia: nunca bajo los brazos y siempre trabajo para alcanzar los objetivos de cada proyecto, sin perder de vista la experiencia del usuario y el impacto real de la solución.",
+        "hero.descripcion.dos": "Uno de mis mayores aprendizajes fue el desarrollo de un sistema multi-tenant de gestión de turnos, donde perfeccioné mi capacidad para diseñar arquitecturas robustas y tomar decisiones estratégicas antes de iniciar un MVP. Este proceso me enseñó a transformar ideas en soluciones claras y estructuradas. Lo que me diferencia es mi constancia y resiliencia: nunca bajo los brazos y siempre trabajo para alcanzar los objetivos de cada proyecto, sin perder de vista la experiencia del usuario y el impacto real de la solución.",
         "hero.data": "Mis datos",
         "hero.download": "Descargar CV",
         "skills.my": "Mis Habilidades",

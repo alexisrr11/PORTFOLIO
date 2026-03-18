@@ -7,9 +7,7 @@
     <meta name="description" content="Portafolio de desarrollador Full-Stack">
     <title>Portafolio - Desarrollador Full-Stack</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="./destacados/cardTurnero.js"></script>
-    <script type="module" src="./destacados/cardE-commerce.js"></script>
-    <script type="module" src="./destacados/cardMultiUser.js"></script>
+    <script type="module" src="./destacados/cardsDestacados.js"></script>
     <script type="module" src="./idiomas/i18n.js"></script>
     <style>
         body {
@@ -66,13 +64,15 @@
                 <div class="hidden md:flex items-center space-x-4">
                     <a data-i18n="nav.about" href="#acerca" class="text-gray-300 hover:text-blue-400">Acerca de mí</a>
                     <a data-i18n="nav.skills" href="#skills" class="text-gray-300 hover:text-blue-400">Habilidades</a>
-                    <a data-i18n="nav.projects" href="#proyectos" class="text-gray-300 hover:text-blue-400">Proyectos</a>
+                    <a data-i18n="nav.projects" href="#proyectos"
+                        class="text-gray-300 hover:text-blue-400">Proyectos</a>
                     <a data-i18n="nav.contact" href="#contactos" class="text-gray-300 hover:text-blue-400">Contactos</a>
                     <button id="btn-idiomas-full" class="flex items-center text-2xl hover:text-blue-400">
                         <i class="bxf bx-translate"></i>
                         <i class="bxf bx-caret-big-down text-sm"></i>
                     </button>
-                    <div id="modal-idiomas-full" class="hidden flex gap-4 bg-gray-800 p-2 rounded-lg absolute top-[65px] right-5">
+                    <div id="modal-idiomas-full"
+                        class="hidden flex gap-4 bg-gray-800 p-2 rounded-lg absolute top-[65px] right-5">
                         <button class="lang-btn" data-lang="es">
                             <img class="w-6" src="./images/espana.png" alt="">
                         </button>
@@ -88,7 +88,8 @@
                     class="hidden md:hidden flex flex-col gap-3 bg-gray-900 absolute top-16 left-0 rounded-md shadow-lg p-2 w-full h-auto">
                     <a data-i18n="nav.about" href="#acerca" class="text-gray-300 hover:text-blue-400">Acerca de mí</a>
                     <a data-i18n="nav.skills" href="#skills" class="text-gray-300 hover:text-blue-400">Habilidades</a>
-                    <a data-i18n="nav.projects" href="#proyectos" class="text-gray-300 hover:text-blue-400">Proyectos</a>
+                    <a data-i18n="nav.projects" href="#proyectos"
+                        class="text-gray-300 hover:text-blue-400">Proyectos</a>
                     <a data-i18n="nav.contact" href="#contactos" class="text-gray-300 hover:text-blue-400">Contactos</a>
                     <button id="btn-idiomas-md" class="flex items-center text-2xl hover:text-blue-400">
                         <i class="bxf bx-translate"></i>
@@ -127,7 +128,8 @@
                         y disfruto más diseñar experiencias del lado del usuario, como también sé crear
                         endpoints y arquitecturas MVC sólidas aplicando POO en Node.js.
                     </span>
-                    <button data-i18n="hero.more" id="btn-ver-mas" class="inline text-blue-400 hover:text-blue-500">Ver más</button>
+                    <button data-i18n="hero.more" id="btn-ver-mas" class="inline text-blue-400 hover:text-blue-500">Ver
+                        más</button>
                 </p>
                 <p data-i18n="hero.descripcion.dos" id="ver-mas" class="hidden text-gray-400 max-w-2xl mx-auto">
                     Uno de mis mayores aprendizajes fue el desarrollo de un sistema multi-tenant de gestión de
@@ -260,26 +262,31 @@
     <section id="contactos" class="py-12 bg-gray-800/90 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center text-gray-100 mb-8">Contactos</h2>
-            <div class="max-w-md mx-auto">
-                <form class="space-y-4">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-300">Nombre</label>
-                        <input type="text" id="name"
-                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
-                        <input type="email" id="email"
-                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-300">Mensaje</label>
-                        <textarea id="message" rows="4"
-                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
-                    </div>
-                    <button type="submit"
-                        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Enviar</button>
-                </form>
+
+            <div class="mt-12">
+                <div class="flex gap-2 justify-start items-center mt-6 w-2/3 mx-auto md:w-1/2">
+                    <p class="border-2 border-gray-400 p-2 w-full rounded-lg">alexis.r4995@gmail.com</p>
+                    <button class="bg-blue-500 p-1 px-2 pt-2 rounded-lg hover:bg-blue-600">
+                        <i class="bxf bx-paper-plane text-xl"></i>
+                    </button>
+                    <button class="bg-blue-500 p-1 px-2 pt-2 rounded-lg hover:bg-blue-600">
+                        <i class="bxf bx-copy text-xl"></i>
+                    </button>
+                </div>
+                <div class="flex justify-center gap-6 mt-8">
+                    <button
+                        class="flex justify-center items-center gap-2 p-3 rounded-lg mb-4 bg-gray-700 hover:bg-gray-600">
+                        <i class="bxl bx-github text-3xl"></i>
+                        <p>GitHub</p>
+                    </button>
+
+                    <button
+                        class="flex justify-center items-center gap-2 p-3 rounded-lg mb-4 bg-blue-700 hover:bg-blue-600">
+                        <i class="bxl bx-linkedin-square text-3xl"></i>
+                        <p>LinkedIn</p>
+                    </button>
+                </div>
+
             </div>
         </div>
     </section>
@@ -290,29 +297,18 @@
             <h3 class="">Ubicación: <span class="font-semibold text-white">Buenos Aires, Argentina</span></h3>
             <h3 class="pt-3">Tiempo de preparación: <span class="font-semibold text-white">2 Años</span></h3>
             <h3 class="pt-3">Trabajo Actual: <span class="font-semibold text-white">Freelance</span></h3>
-            <h3 class="pt-3">Idiomas: 
+            <h3 class="pt-3">Idiomas:
                 <span class="font-semibold text-white">
                     <span class="flex items-center gap-3">
-                        <img 
-                        class="w-5" 
-                        src="./images/espana.png" 
-                        alt="">
-                        Español: Lenguaje nativo 
+                        <img class="w-5" src="./images/espana.png" alt="">
+                        Español: Lenguaje nativo
                     </span>
                     <span class="flex items-center gap-3">
-                        <img 
-                        class="w-5"
-                        src="./images/reino-unido.png" 
-                        alt=""
-                        >
+                        <img class="w-5" src="./images/reino-unido.png" alt="">
                         Ingles: (B1)
                     </span>
                     <span class="flex items-center gap-3">
-                        <img 
-                        class="w-5 h-[14px] rounded-sm"
-                        src="./images/portugal.png" 
-                        alt=""
-                        >
+                        <img class="w-5 h-[14px] rounded-sm" src="./images/portugal.png" alt="">
                         Portugues: (A2)
                     </span>
                 </span>
@@ -327,7 +323,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900/90 backdrop-blur-sm text-white py-4">
+    <footer class="bg-gray-900/90 backdrop-blur-sm text-white border-t-2 border-blue-600/70 py-5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p>&copy; 2026 <b>Alexis Rodriguez</b>. Todos los derechos reservados.</p>
         </div>

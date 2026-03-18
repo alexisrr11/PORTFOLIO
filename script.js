@@ -10,11 +10,20 @@ const btnIdiomaMd = document.getElementById("btn-idiomas-md");
 const modalIdiomasFull = document.getElementById("modal-idiomas-full");
 const modalIdiomasMd = document.getElementById("modal-idiomas-md");
 
-function abrirCerrar (btn, contendor){
-    btn.addEventListener("click", () => {
-        contendor.classList.toggle("hidden");
+function abrirCerrar(btn, contenedor) {
+    btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        contenedor.classList.toggle("hidden");
     });
-};
+
+    document.addEventListener("click", (e) => {
+        if (!contenedor.classList.contains("hidden")) {
+            if (!contenedor.contains(e.target) && e.target !== btn) {
+                contenedor.classList.add("hidden");
+            }
+        }
+    });
+}
 
 abrirCerrar(btnMenu, contendorMenu);
 abrirCerrar(btnCerrarModal, modalProyectos);
@@ -24,21 +33,6 @@ abrirCerrar(btnIdiomasFull, modalIdiomasFull);
 abrirCerrar(btnIdiomaMd, modalIdiomasMd);
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Manejar el envío del formulario de contacto
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        if (name && email && message) {
-            alert(`Gracias ${name}, tu mensaje ha sido enviado. Te contactaré pronto.`);
-            form.reset();
-        } else {
-            alert('Por favor, completa todos los campos.');
-        }
-    });
 
     // Smooth scroll para navegación y manejo de enlace activo
     const navLinks = document.querySelectorAll('nav a');
