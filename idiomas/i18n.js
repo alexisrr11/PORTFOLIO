@@ -15,6 +15,10 @@ const translations = {
         "hero.more": "Ver más",
         "hero.less": "Ver menos",
         "hero.descripcion.dos": "Uno de mis mayores aprendizajes fue el desarrollo de un sistema multi-tenant de gestión de turnos, donde perfeccioné mi capacidad para diseñar arquitecturas robustas y tomar decisionesestratégicas antes de iniciar un MVP. Este proceso me enseñó a transformar ideas en soluciones claras y estructuradas. Lo que me diferencia es mi constancia y resiliencia: nunca bajo los brazos y siempre trabajo para alcanzar los objetivos de cada proyecto, sin perder de vista la experiencia del usuario y el impacto real de la solución.",
+        "hero.data": "Mis datos",
+        "hero.download": "Descargar CV",
+        "skills.my": "Mis Habilidades",
+        "skills.learning": "En aprendizaje",
     },
     en: {
         "title": "Portfolio - Full-Stack Developer",
@@ -28,6 +32,10 @@ const translations = {
         "hero.more": "Read more",
         "hero.less": "Read less",
         "hero.descripcion.dos": "One of my most valuable learning experiences was developing a multi-tenant appointment management system, where I strengthened my ability to design robust architectures and make strategic decisions before starting an MVP. This process taught me how to transform ideas into clear and structured solutions. What sets me apart is my consistency and resilience: I never give up and always work towards achieving each project’s goals, without losing sight of the user experience and the real impact of the solution.",
+        "hero.data": "My Information",
+        "hero.download": "Download CV",
+        "skills.my": "My Skills",
+        "skills.learning": "Currently Learning",
     },
     pt: {
         "title": "Portfólio - Desenvolvedor Full-Stack",
@@ -41,6 +49,10 @@ const translations = {
         "hero.more": "Ler mais",
         "hero.less": "Ler menos",
         "hero.descripcion.dos": "Um dos meus maiores aprendizados foi o desenvolvimento de um sistema multi-tenant de gestão de agendamentos, onde aperfeiçoei minha capacidade de projetar arquiteturas robustas e tomar decisões estratégicas antes de iniciar um MVP. Esse processo me ensinou a transformar ideias em soluções claras e estruturadas. O que me diferencia é minha constância e resiliência: nunca desisto e sempre trabalho para alcançar os objetivos de cada projeto, sem perder de vista a experiência do usuário e o impacto real da solução.",
+        "hero.data": "Meus dados",
+        "hero.download": "Baixar CV",
+        "skills.my": "Minhas habilidades",
+        "skills.learning": "Em aprendizado",
     }
 };
 

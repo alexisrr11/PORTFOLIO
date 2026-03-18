@@ -141,17 +141,17 @@
                     usuario y el impacto real de la solución.
                 </p>
                 <div class="flex justify-center gap-4">
-                    <button id="btn-abrir-datos" class="bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
+                    <button id="btn-abrir-datos" class="flex items-center gap-2 bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
                     hover:text-gray-900 hover:bg-gray-50
                     hover:font-semibold">
                         <i class="bxf bx-user-search text-xl text-blue-400 font-semibold"></i>
-                        Mis datos
+                        <p data-i18n="hero.data">Mis datos</p>
                     </button>
-                    <button id="descargar-cv" class="bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
+                    <button id="descargar-cv" class="flex items-center gap-2 bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
                     hover:text-gray-900 hover:bg-gray-50
                     hover:font-semibold">
                         <i class="bxf bx-arrow-out-down-square-half text-xl text-green-400 font-semibold"></i>
-                        Descargar CV
+                        <P data-i18n="hero.download">Descargar CV</P>
                     </button>
                 </div>
                 <button id="scrollDownBtn" class="text-center text-white text-4xl mt-6">
@@ -165,7 +165,7 @@
     <!-- Habilidades -->
     <section id="skills" class="py-12 bg-gray-800/90 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center text-gray-100 mb-8">Mis Habilidades</h2>
+            <h2 data-i18n="skills.my" class="text-3xl font-bold text-center text-gray-100 mb-8">Mis Habilidades</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-yellow-400 bxl bx-javascript"></i>
@@ -200,7 +200,7 @@
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <h2 class="text-2xl font-bold text-center text-gray-100 mt-12 mb-8">
+            <h2 data-i18n="skills.learning" class="text-2xl font-bold text-center text-gray-100 mt-12 mb-8">
                 En aprendizaje
             </h2>
 
@@ -284,7 +284,7 @@
         </div>
     </section>
     <div id="modal-datos" class="hidden fixed top-6 h-[90vh] w-full bg-gray-900 text-center p-6 z-50">
-        <button id="btn-cerrar-datos" class="fixed top-10 right-6 font-bold text-xl">x</button>
+        <button id="btn-cerrar-datos" class="fixed top-10 right-6 font-bold text-xl hover:text-blue-400">x</button>
         <h2 class="text-3xl font-semibold mb-8">Datos Personales</h2>
         <div class="text-start text-gray-300">
             <h3 class="">Ubicación: <span class="font-semibold text-white">Buenos Aires, Argentina</span></h3>
@@ -322,7 +322,7 @@
     </div>
 
     <div id="modal-proyectos" class="hidden fixed top-6 h-[90vh] w-full bg-gray-900 z-50">
-        <button id="btn-cerrar-modal" class="fixed top-10 right-6 font-bold text-xl">x</button>
+        <button id="btn-cerrar-modal" class="fixed top-10 right-6 font-bold text-xl hover:text-blue-500">x</button>
         <div id="contendor-proyecto"></div>
     </div>
 
