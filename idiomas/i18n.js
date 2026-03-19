@@ -2,7 +2,7 @@ let currentLang = "es";
 const btnVerMas = document.getElementById("btn-ver-mas");
 const contenedorVerMas = document.getElementById("ver-mas");
 
-const translations = {
+export const translations = {
     es: {
         "title": "Portafolio - Desarrollador Full-Stack",
         "nav.about": "Acerca de mí",
@@ -22,6 +22,7 @@ const translations = {
         "projects.featured": "Proyectos Destacados",
         "projects.details": "Ver detalles",
         "contacts.title": "Contactos",
+        "contacts.copy": "¡Correo copiado al portapapeles!",
         "footer.rights": "Todos los derechos reservados"
     },
     en: {
@@ -43,6 +44,7 @@ const translations = {
         "projects.featured": "Featured Projects",
         "projects.details": "Learn more",
         "contacts.title": "Contacts",
+        "contacts.copy": "Email copied to clipboard!",
         "footer.rights": "All rights reserved"
     },
     pt: {
@@ -64,6 +66,7 @@ const translations = {
         "projects.featured": "Projetos em destaque",
         "projects.details": "Ver detalhes",
         "contacts.title": "Contatos",
+        "contacts.copy": "E-mail copiado para a área de transferência!",
         "footer.rights": "Todos os direitos reservados"
     }
 };

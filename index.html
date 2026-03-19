@@ -149,12 +149,13 @@
                         <i class="bxf bx-user-search text-xl text-blue-400 font-semibold"></i>
                         <p data-i18n="hero.data">Mis datos</p>
                     </button>
-                    <button id="descargar-cv" class="flex items-center gap-2 bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
+                    <a href="./archivos/Curriculum Vitae Profesional con Foto Moderno Azul en Ingles.pdf" download
+                        class="flex items-center gap-2 bg-blue-900/20 border-2 border-gray-200 p-2 mt-4 rounded-md 
                     hover:text-gray-900 hover:bg-gray-50
                     hover:font-semibold">
                         <i class="bxf bx-arrow-out-down-square-half text-xl text-green-400 font-semibold"></i>
                         <P data-i18n="hero.download">Descargar CV</P>
-                    </button>
+                    </a>
                 </div>
                 <button id="scrollDownBtn" class="text-center text-white text-4xl mt-6">
                     <i class='bx bx-chevrons-down animate-bounce-slow'></i>
@@ -230,21 +231,24 @@
     <!-- Proyectos -->
     <section id="proyectos" class="py-12 bg-gray-900/70">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 data-i18n="projects.featured" class="text-3xl font-bold text-center text-gray-100 mb-8">Proyectos Destacados</h2>
+            <h2 data-i18n="projects.featured" class="text-3xl font-bold text-center text-gray-100 mb-8">Proyectos
+                Destacados</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <button id="btn-app-turnero" class="bg-gray-800 p-6 rounded-lg shadow-md">
                     <div class="hover:scale-110 transform transition-transform duration-1000">
                         <h3 class="text-xl font-semibold text-gray-100 mb-3">App Turnero</h3>
                         <img src="./images/app turnos.png" alt="App Turnero" class="h-44 w-auto mx-auto rounded-md">
                     </div>
-                    <p data-i18n="projects.details" class="pt-4 text-sm text-blue-400 text-start font-semibold">Ver detalles</p>
+                    <p data-i18n="projects.details" class="pt-4 text-sm text-blue-400 text-start font-semibold">Ver
+                        detalles</p>
                 </button>
                 <button id="btn-e-commerce" class="bg-gray-800 p-6 rounded-lg shadow-md">
                     <div class="hover:scale-110 transform transition-transform duration-1000">
                         <h3 class="text-xl font-semibold text-gray-100 mb-3">E-commerce</h3>
                         <img src="./images/e-commerce.png" alt="Suturn bike" class="h-44 w-auto mx-auto rounded-md">
                     </div>
-                    <p data-i18n="projects.details" class="pt-4 text-sm text-blue-400 text-start font-semibold">Ver detalles</p>
+                    <p data-i18n="projects.details" class="pt-4 text-sm text-blue-400 text-start font-semibold">Ver
+                        detalles</p>
                 </button>
                 <button id="btn-app-todo" class="bg-gray-800 p-6 rounded-lg shadow-md">
                     <div class="hover:scale-110 transform transition-transform duration-1000">
@@ -252,7 +256,8 @@
                         <img src="./images/app market.png" alt="App ToDo multi-usuarios"
                             class="h-44 w-auto mx-auto rounded-md">
                     </div>
-                    <p data-i18n="projects.details" class="pt-4 text-sm text-blue-400 text-start font-semibold">Ver detalles</p>
+                    <p data-i18n="projects.details" class="pt-4 text-sm text-blue-400 text-start font-semibold">Ver
+                        detalles</p>
                 </button>
             </div>
         </div>
@@ -265,55 +270,71 @@
 
             <div class="mt-12">
                 <div class="flex gap-2 justify-start items-center mt-6 w-2/3 mx-auto md:w-1/2">
-                    <p class="border-2 border-gray-400 p-2 w-full rounded-lg">alexis.r4995@gmail.com</p>
-                    <button class="bg-blue-500 p-1 px-2 pt-2 rounded-lg hover:bg-blue-600">
+                    <p id="emailText" class="border-2 border-gray-400 p-2 w-full rounded-lg">
+                        alexis.r4995@gmail.com
+                    </p>
+                    <button id="sendBtn" class="bg-blue-500 p-1 px-2 pt-2 rounded-lg hover:bg-blue-600">
                         <i class="bxf bx-paper-plane text-xl"></i>
                     </button>
-                    <button class="bg-blue-500 p-1 px-2 pt-2 rounded-lg hover:bg-blue-600">
+                    <button id="copyBtn" class="bg-blue-500 p-1 px-2 pt-2 rounded-lg hover:bg-blue-600">
                         <i class="bxf bx-copy text-xl"></i>
                     </button>
                 </div>
+
                 <div class="flex justify-center gap-6 mt-8">
-                    <button
+                    <a href=""
                         class="flex justify-center items-center gap-2 p-3 rounded-lg mb-4 bg-gray-700 hover:bg-gray-600">
                         <i class="bxl bx-github text-3xl"></i>
                         <p>GitHub</p>
-                    </button>
+                    </a>
 
-                    <button
+                    <a href="https://www.linkedin.com/in/" target="_blank"
                         class="flex justify-center items-center gap-2 p-3 rounded-lg mb-4 bg-blue-700 hover:bg-blue-600">
                         <i class="bxl bx-linkedin-square text-3xl"></i>
                         <p>LinkedIn</p>
-                    </button>
+                    </a>
                 </div>
 
             </div>
         </div>
     </section>
-    <div id="modal-datos" class="hidden fixed top-6 h-[90vh] w-full bg-gray-900 text-center p-6 z-50">
-        <button id="btn-cerrar-datos" class="fixed top-10 right-6 font-bold text-xl hover:text-blue-400">x</button>
-        <h2 class="text-3xl font-semibold mb-8">Datos Personales</h2>
-        <div class="text-start text-gray-300">
-            <h3 class="">Ubicación: <span class="font-semibold text-white">Buenos Aires, Argentina</span></h3>
-            <h3 class="pt-3">Tiempo de preparación: <span class="font-semibold text-white">2 Años</span></h3>
-            <h3 class="pt-3">Trabajo Actual: <span class="font-semibold text-white">Freelance</span></h3>
-            <h3 class="pt-3">Idiomas:
-                <span class="font-semibold text-white">
-                    <span class="flex items-center gap-3">
-                        <img class="w-5" src="./images/espana.png" alt="">
-                        Español: Lenguaje nativo
+    <div id="modal-datos" class="hidden fixed top-6 h-[90vh] overflow-y-auto w-full bg-gray-900 text-center p-6 z-50">
+        <button id="btn-cerrar-datos" class="fixed top-10 right-10 font-bold text-xl hover:text-blue-400">x</button>
+        <h3 class="text-3xl font-semibold mb-8">Datos Personales</h3>
+        <div class="flex justify-around mb-4 md:flex-row flex-col items-center gap-8">
+            <div class="text-start text-gray-300">
+                <h4 class="">Ubicación: <span class="font-semibold text-white">Buenos Aires, Argentina</span></h4>
+                <h4 class="pt-3">Tiempo de preparación: <span class="font-semibold text-white">2 Años</span></h4>
+                <h4 class="pt-3">Trabajo Actual: <span class="font-semibold text-white">Freelance</span></h4>
+                <h4 class="pt-3">Idiomas:
+                    <span class="font-semibold text-white">
+                        <span class="flex items-center gap-3">
+                            <img class="w-5" src="./images/espana.png" alt="">
+                            Español: Lenguaje nativo
+                        </span>
+                        <span class="flex items-center gap-3">
+                            <img class="w-5" src="./images/reino-unido.png" alt="">
+                            Ingles: (B1)
+                        </span>
+                        <span class="flex items-center gap-3">
+                            <img class="w-5 h-[14px] rounded-sm" src="./images/portugal.png" alt="">
+                            Portugues: (A2)
+                        </span>
                     </span>
-                    <span class="flex items-center gap-3">
-                        <img class="w-5" src="./images/reino-unido.png" alt="">
-                        Ingles: (B1)
-                    </span>
-                    <span class="flex items-center gap-3">
-                        <img class="w-5 h-[14px] rounded-sm" src="./images/portugal.png" alt="">
-                        Portugues: (A2)
-                    </span>
-                </span>
-            </h3>
-            <h3 class="pt-3">Edad: <span class="font-semibold text-white">30 Años</span></h3>
+                </h4>
+                <h4 class="pt-3">Edad: <span class="font-semibold text-white">30 Años</span></h4>
+            </div>
+            <div class="w-auto text-gray-300 md:w-1/3">
+                <h3 class="text-lg font-semibold mb-4">Objetivos</h3>
+                <p>
+                    Mi objetivo es crear una sólida base en arquitectura de software, combinando frontend y backend para
+                    construir aplicaciones completas. También busco fortalecer mis ideas en productos funcionales sobre
+                    sistemas integrales, tomando siempre las mejores decisiones posibles en cuanto a estructura y
+                    resolución de problemas reales.
+                    En el futuro espero dominar un stack con TypeScript aplicado en Next.js, utilizando herramientas
+                    como Prisma y Docker.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -325,11 +346,12 @@
     <!-- Footer -->
     <footer class="bg-gray-900/90 backdrop-blur-sm text-white border-t-2 border-blue-600/70 py-5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2026 <b>Alexis Rodriguez</b>. <span data-i18n="footer.rights">Todos los derechos reservados</span>.</p>
+            <p>&copy; 2026 <b>Alexis Rodriguez</b>. <span data-i18n="footer.rights">Todos los derechos
+                    reservados</span>.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

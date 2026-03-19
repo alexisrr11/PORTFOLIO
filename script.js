@@ -1,3 +1,5 @@
+import {translations} from "./idiomas/i18n.js";
+
 const btnMenu = document.getElementById("btn-menu");
 const contendorMenu = document.getElementById("contendor-menu");
 const btnCerrarModal = document.getElementById("btn-cerrar-modal");
@@ -100,7 +102,27 @@ document.addEventListener('DOMContentLoaded', function () {
 // Al hacer click, scrollea hasta el final del viewport
 document.getElementById("scrollDownBtn").addEventListener("click", () => {
     window.scrollBy({
-        top: window.innerHeight, // baja una pantalla completa (100vh)
+        top: window.innerHeight,
         behavior: "smooth"
     });
 });
+
+// Botón para inicializar envío de correo y botón para copiar al portapapeles
+const email = document.getElementById("emailText").innerText;
+
+document.getElementById("sendBtn").addEventListener("click", () => {
+    window.location.href = `mailto:${email}`;
+});
+
+document.getElementById("copyBtn").addEventListener("click", async () => {
+    try {
+        await navigator.clipboard.writeText(email);
+        const currentLang = document.documentElement.lang;
+        alert(translations[currentLang]["contacts.copy"]);
+    } catch (err) {
+        console.error("Error al copiar: ", err);
+    }
+});
+
+
+
