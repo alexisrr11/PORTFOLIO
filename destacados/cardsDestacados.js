@@ -4,13 +4,19 @@ const btnMultiUser = document.getElementById("btn-app-todo");
 const btnTurnero = document.getElementById("btn-app-turnero");
 const modalProyectos = document.getElementById("modal-proyectos");
 
-function abrirModal(titulo, descripcion, imagenes = [], descripciones = []) {
+function abrirModal(titulo, descripcion, imagenes = [], descripciones = [], tecnologias = []) {
     contenedorCards.innerHTML = "";
     modalProyectos.classList.remove("hidden");
 
     const contenedor = document.createElement("div");
-    contenedor.classList.add("pt-10", "px-6", "text-center", "max-h-[80vh]", "overflow-y-auto"
+    contenedor.classList.add("pt-10", "px-6", "text-center", "max-h-[99vh]", "overflow-y-auto"
     );
+
+    const tecnologiasHTML = tecnologias.map(tech => `
+        <span class="flex justify-center items-center">
+            ${tech}
+        </span>
+    `).join("");
 
     // Miniaturas con data-index
     const imagenesHTML = imagenes.map((img, index) => `
@@ -20,7 +26,7 @@ function abrirModal(titulo, descripcion, imagenes = [], descripciones = []) {
     `).join("");
 
     contenedor.innerHTML = `
-        <h3 class="text-xl font-semibold mb-2">${titulo}</h3>
+        <h3 class="text-2xl font-semibold mb-2">${titulo}</h3>
         <div class="flex flex-col gap-4 my-4">
   <div class="flex justify-center items-stretch gap-6 m-auto">
     <!-- Contenedor de miniaturas -->
@@ -35,8 +41,10 @@ function abrirModal(titulo, descripcion, imagenes = [], descripciones = []) {
 </div>
       <h4 class="font-semibold my-2">Descripción</h4>
       <p id="descripcion-principal" class="text-gray-400">${descripciones[0] || descripcion}</p>
-      <h5 class="font-semibold my-2">Tecnologías</h5>
-      <p class="my-4">HTML, CSS y JS</p>
+      <h5 class="font-semibold mt-2">Tecnologías</h5>
+      <div class="flex flex-wrap gap-2 my-2">
+        ${tecnologiasHTML}
+        </div>
       <a href="#"
          class="bg-gray-700 rounded-lg p-4 text-start">
         Ver Repositorio
@@ -77,6 +85,11 @@ btnECommerce.addEventListener("click", (e) => {
             "Vista principal de la tienda",
             "Pantalla de productos con likes",
             "Carrito de compras en acción"
+        ],
+        [
+            '<i class="text-4xl text-orange-600 bxl bx-html5"></i>',
+            '<i class="text-4xl text-blue-500 bxl bx-css3"></i>',
+            '<i class="text-4xl text-yellow-400 bxl bx-javascript"></i>'
         ]
     );
 });
@@ -95,6 +108,14 @@ btnMultiUser.addEventListener("click", (e) => {
             "Vista principal de la tienda",
             "Pantalla de productos con likes",
             "Carrito de compras en acción"
+        ],
+        [
+            '<i class="text-4xl text-orange-600 bxl bx-html5"></i>',
+            '<i class="text-4xl text-blue-400 bxl bx-tailwind-css"></i>',
+            '<i class="text-4xl text-yellow-400 bxl bx-javascript"></i>',
+            '<i class="text-4xl text-green-400 bxl bx-nodejs"></i>',
+            '<i class="text-4xl text-gray-400 bxl bx-express-js"></i>',
+            '<i class="text-4xl text-blue-400 bxl bx-postgresql"></i>'
         ]
     );
 });
@@ -118,6 +139,14 @@ btnTurnero.addEventListener("click", (e) => {
             "Vista principal de la tienda",
             "Pantalla de productos con likes",
             "Carrito de compras en acción"
+        ],
+        [
+            '<i class="text-4xl text-orange-600 bxl bx-html5"></i>',
+            '<i class="text-4xl text-blue-400 bxl bx-tailwind-css"></i>',
+            '<i class="text-4xl text-yellow-400 bxl bx-javascript"></i>',
+            '<i class="text-4xl text-green-400 bxl bx-nodejs"></i>',
+            '<i class="text-4xl text-gray-400 bxl bx-express-js"></i>',
+            '<i class="text-4xl text-blue-400 bxl bx-postgresql"></i>'
         ]
     );
 });

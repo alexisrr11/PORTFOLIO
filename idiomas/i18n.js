@@ -19,13 +19,17 @@ const translations = {
         "hero.download": "Descargar CV",
         "skills.my": "Mis Habilidades",
         "skills.learning": "En aprendizaje",
+        "projects.featured": "Proyectos Destacados",
+        "projects.details": "Ver detalles",
+        "contacts.title": "Contactos",
+        "footer.rights": "Todos los derechos reservados"
     },
     en: {
         "title": "Portfolio - Full-Stack Developer",
         "nav.about": "About me",
         "nav.skills": "Skills",
         "nav.projects": "Projects",
-        "nav.contact": "Contact",
+        "nav.contact": "Contacts",
         "hero.title": "Hi, I'm Rodriguez Alexis",
         "hero.subtitle": "Full-Stack Developer with a slight Front-End focus",
         "hero.descripcion.uno": "I’m passionate about building complete applications, both from a technical perspective and from the business model behind each project. I create modern interfaces and especially enjoy designing user-centered experiences, while also being capable of building endpoints and solid MVC architectures using object-oriented programming in Node.js.",
@@ -36,13 +40,17 @@ const translations = {
         "hero.download": "Download CV",
         "skills.my": "My Skills",
         "skills.learning": "Currently Learning",
+        "projects.featured": "Featured Projects",
+        "projects.details": "Learn more",
+        "contacts.title": "Contacts",
+        "footer.rights": "All rights reserved"
     },
     pt: {
         "title": "Portfólio - Desenvolvedor Full-Stack",
         "nav.about": "Sobre mim",
         "nav.skills": "Habilidades",
         "nav.projects": "Projetos",
-        "nav.contact": "Contato",
+        "nav.contact": "Contatos",
         "hero.title": "Olá, sou Rodriguez Alexis",
         "hero.subtitle": "Desenvolvedor Full-Stack com foco em Front-End",
         "hero.descripcion.uno": "Sou apaixonado por construir aplicações completas, tanto do ponto de vista técnico quanto do modelo de negócio por trás de cada projeto. Crio interfaces modernas e gosto especialmente de projetar experiências centradas no usuário, além de ter experiência na criação de endpoints e arquiteturas MVC sólidas utilizando programação orientada a objetos em Node.js.",
@@ -53,6 +61,10 @@ const translations = {
         "hero.download": "Baixar CV",
         "skills.my": "Minhas habilidades",
         "skills.learning": "Em aprendizado",
+        "projects.featured": "Projetos em destaque",
+        "projects.details": "Ver detalhes",
+        "contacts.title": "Contatos",
+        "footer.rights": "Todos os direitos reservados"
     }
 };
 
