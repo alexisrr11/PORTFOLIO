@@ -68,9 +68,9 @@ export const translations = {
             },
             turnero: {
                 title: "Practical Session",
-                description: "Sistema de gestión de turnos",
+                description: "",
                 imagesDesc: [
-                    "Suscripción",
+                    "Practical Session es una aplicación SaaS, multi-tenant y esta compuesta por un software, una base de datos y multiples clientes. Esta app no va tener optimizaciones de CEO y va a mantener un flujo al rededor de 20 empresas, ya que al tener una sola DB debe ser sostenible el rendimineto para evitar demoras en el sistema. La seguridad de los datos tanto de las empresas como los clientes de cada empresa estan vinculados a un id_empresarial, sifrado con JWT. La creación de usuarios empresariales como clientes de empresas son ilimitados en la versión free, pero en el caso de no abonar dentro de los 6 meses el plan premium se borrara todos los datos vinculados. He buscado crear un software adaptable para cualquier empresa, automatizando la toma de turnos, dandole la posibilidad de deslegar trabajos de agenda.",
                     "Registro empresa",
                     "Dashboard"
                 ]
