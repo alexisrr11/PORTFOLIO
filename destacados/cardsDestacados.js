@@ -123,10 +123,9 @@ btnMultiUser.addEventListener("click", (e) => {
 btnTurnero.addEventListener("click", (e) => {
     e.stopPropagation();
     abrirModal(
-        "Turnero",
+        "Practical Session",
         "Desarrollo de una aplicación de gestión de turnos para un servicio público. Implementación de funcionalidades como reserva de turnos, notificaciones y panel de administración.",
         [
-            "./images/app turnos.png",
             "./images/appTurnos(suscripcion).png",
             "./images/appTurnos(registroEmpresa).png",
             "./images/appTurnos(registroAdmin).png",
@@ -136,7 +135,7 @@ btnTurnero.addEventListener("click", (e) => {
             "./images/appTurnos(dashboardCliente).png"
         ],
         [
-            "Vista principal de la tienda",
+            "Practical Session es una aplicación SaaS, multi-tenant y esta compuesta por un software, una base de datos y multiples clientes. Esta app no va tener optimizaciones de CEO y va a mantener un flujo al rededor de 20 empresas, ya que al tener una sola DB debe ser sostenible el rendimineto para evitar demoras en el sistema. La seguridad de los datos tanto de las empresas como los clientes de cada empresa estan vinculados a un id_empresarial, sifrado con JWT. La creación de usuarios empresariales como clientes de empresas son ilimitados en la versión free, pero en el caso de no abonar dentro de los 6 meses el plan premium se borrara todos los datos vinculados. He buscado crear un software adaptable para cualquier empresa, automatizando la toma de turnos, dandole la posibilidad de deslegar trabajos de agenda.",
             "Pantalla de productos con likes",
             "Carrito de compras en acción"
         ],
