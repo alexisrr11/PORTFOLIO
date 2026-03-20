@@ -1,4 +1,11 @@
+import { abrirModal, currentProject } from "../destacados/cardsDestacados.js";
+
 let currentLang = "es";
+
+export function getLang() {
+    return currentLang;
+}
+
 const btnVerMas = document.getElementById("btn-ver-mas");
 const contenedorVerMas = document.getElementById("ver-mas");
 
@@ -37,7 +44,38 @@ export const translations = {
         "modal.my.age": "30 Años",
         "modal.goals": "Objetivos",
         "modal.goals.description": "Mi objetivo es crear una sólida base en arquitectura de software, combinando frontend y backend para construir aplicaciones completas. También busco fortalecer mis ideas en productos funcionales sobre sistemas integrales, tomando siempre las mejores decisiones posibles en cuanto a estructura y resolución de problemas reales. En el futuro espero dominar un stack con TypeScript aplicado en Next.js, utilizando herramientas como Prisma y Docker.",
-
+        "modal.description":"Descripción",
+        "modal.technologies": "Tecnologías",
+        "modal.repo": "Repositorio",
+        projects: {
+            ecommerce: {
+                title: "Saturn E-Commerce",
+                description: "Descripción general del proyecto",
+                imagesDesc: [
+                    "Vista principal de la tienda",
+                    "Pantalla de productos con likes",
+                    "Carrito de compras en acción"
+                ]
+            },
+            multiuser: {
+                title: "Multi-User",
+                description: "Aplicación web multiusuario con React y Node.js",
+                imagesDesc: [
+                    "Vista principal",
+                    "Login",
+                    "Registro"
+                ]
+            },
+            turnero: {
+                title: "Practical Session",
+                description: "Sistema de gestión de turnos",
+                imagesDesc: [
+                    "Suscripción",
+                    "Registro empresa",
+                    "Dashboard"
+                ]
+            }
+        }
     },
     en: {
         "title": "Portfolio - Full-Stack Developer",
@@ -73,6 +111,38 @@ export const translations = {
         "modal.my.age": "30 years",
         "modal.goals": "Goals",
         "modal.goals.description": "My goal is to build a solid foundation in software architecture, combining frontend and backend to develop complete applications. I also aim to strengthen my ideas into functional products within integrated systems, always making the best possible decisions regarding structure and solving real-world problems. In the future, I hope to master a stack with TypeScript applied in Next.js, using tools such as Prisma and Docker.",
+        "modal.description":"Description",
+        "modal.technologies": "Technologies",
+        "modal.repo": "Repository",
+        projects: {
+            ecommerce: {
+                title: "E-Commerce",
+                description: "Description of the project",
+                imagesDesc: [
+                    "Main view of the store",
+                    "Product screen with likes",
+                    "Shopping cart in action"
+                ]
+            },
+            multiuser: {
+                title: "Multi-User",
+                description: "Multi-user web application with React and Node.js",
+                imagesDesc: [
+                    "Main view",
+                    "Login",
+                    "Registration"
+                ]
+            },
+            turnero: {
+                title: "Practical Session",
+                description: "System for managing appointments",
+                imagesDesc: [
+                    "Subscription",
+                    "Company Registration",
+                    "Dashboard"
+                ]
+            }
+        }
     },
     pt: {
         "title": "Portfólio - Desenvolvedor Full-Stack",
@@ -108,6 +178,38 @@ export const translations = {
         "modal.my.age": "30 anos",
         "modal.goals": "Objetivos",
         "modal.goals.description": "Meu objetivo é criar uma base sólida em arquitetura de software, combinando frontend e backend para desenvolver aplicações completas. Também busco transformar minhas ideias em produtos funcionais dentro de sistemas integrados, sempre tomando as melhores decisões possíveis em relação à estrutura e à resolução de problemas reais. No futuro, espero dominar um stack com TypeScript aplicado em Next.js, utilizando ferramentas como Prisma e Docker.",
+        "modal.description":"Descrição",
+        "modal.technologies": "Tecnologias",
+        "modal.repo": "Repositório",
+        projects: {
+            ecommerce: {
+                title: "Saturn E-Commerce",
+                description: "Descrição do projeto",
+                imagesDesc: [
+                    "Vista principal da loja",
+                    "Tela de produtos com likes",
+                    "Carrinho de compras em ação"
+                ]
+            },
+            multiuser: {
+                title: "Multi-User",
+                description: "Descrição do projeto",
+                imagesDesc: [
+                    "Vista principal",
+                    "Login",
+                    "Registro"
+                ]
+            },
+            turnero: {
+                title: "Practical Session",
+                description: "Sistema de gestão de agendamentos",
+                imagesDesc: [
+                    "Subscripción",
+                    "Registro de empresa",
+                    "Dashboard"
+                ]
+            }
+        }
     }
 };
 
@@ -125,6 +227,14 @@ function changeLanguage(lang) {
     currentLang = lang;
     contenedorVerMas.classList.add("hidden");
     const elements = document.querySelectorAll("[data-i18n]");
+
+    if (currentProject) {
+        abrirModal(
+            currentProject.projectKey,
+            currentProject.imagenes,
+            currentProject.tecnologias
+        );
+    }
 
     elements.forEach(el => {
         const key = el.getAttribute("data-i18n");

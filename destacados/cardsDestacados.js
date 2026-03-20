@@ -1,10 +1,28 @@
+import { translations, getLang } from "../idiomas/i18n.js";
+
 const contenedorCards = document.getElementById("contendor-proyecto");
 const btnECommerce = document.getElementById("btn-e-commerce");
 const btnMultiUser = document.getElementById("btn-app-todo");
 const btnTurnero = document.getElementById("btn-app-turnero");
 const modalProyectos = document.getElementById("modal-proyectos");
+export let currentProject = null;
 
-function abrirModal(titulo, descripcion, imagenes = [], descripciones = [], tecnologias = []) {
+export function abrirModal(projectKey, imagenes = [], tecnologias = []) {
+
+    const lang = getLang();
+    const t = translations[lang]?.projects?.[projectKey];
+
+    if (!t) {
+        console.error("❌ ERROR: proyecto no encontrado");
+        return;
+    }
+
+    const titulo = t.title;
+    const descripcion = t.description;
+    const descripciones = t.imagesDesc;
+
+    currentProject = { projectKey, imagenes, tecnologias };
+
     contenedorCards.innerHTML = "";
     modalProyectos.classList.remove("hidden");
 
@@ -21,7 +39,7 @@ function abrirModal(titulo, descripcion, imagenes = [], descripciones = [], tecn
     // Miniaturas con data-index
     const imagenesHTML = imagenes.map((img, index) => `
         <img src="${img}" alt="${titulo}" 
-             class="w-32 h-auto cursor-pointer" 
+             class="min-w-32 max-w-32 h-auto cursor-pointer" 
              data-index="${index}">
     `).join("");
 
@@ -39,15 +57,15 @@ function abrirModal(titulo, descripcion, imagenes = [], descripciones = [], tecn
       <div class="flex justify-center items-center h-full">
   <img id="imagen-principal" class="w-[50vw]" src="${imagenes[0]}" alt="">
 </div>
-      <h4 class="font-semibold my-2">Descripción</h4>
+      <h4 class="font-semibold my-2">${translations[lang]["modal.description"]}</h4>
       <p id="descripcion-principal" class="text-gray-400">${descripciones[0] || descripcion}</p>
-      <h5 class="font-semibold mt-2">Tecnologías</h5>
+      <h5 class="font-semibold mt-2">${translations[lang]["modal.technologies"]}</h5>
       <div class="flex flex-wrap gap-2 my-2">
         ${tecnologiasHTML}
         </div>
       <a href="#"
          class="bg-gray-700 rounded-lg p-4 text-start">
-        Ver Repositorio
+            ${translations[lang]["modal.repo"]}
         <i class="bxl bx-github text-2xl"></i>
       </a>
     </div>
@@ -74,17 +92,11 @@ function abrirModal(titulo, descripcion, imagenes = [], descripciones = [], tecn
 btnECommerce.addEventListener("click", (e) => {
     e.stopPropagation();
     abrirModal(
-        "E-Commerce",
-        "Descripción general del proyecto",
+        "ecommerce",
         [
             "./images/e-commerce.png",
             "./images/e-commerce(likes).png",
             "./images/e-commerce(carritoCompras).png"
-        ],
-        [
-            "Vista principal de la tienda",
-            "Pantalla de productos con likes",
-            "Carrito de compras en acción"
         ],
         [
             '<i class="text-4xl text-orange-600 bxl bx-html5"></i>',
@@ -97,17 +109,11 @@ btnECommerce.addEventListener("click", (e) => {
 btnMultiUser.addEventListener("click", (e) => {
     e.stopPropagation();
     abrirModal(
-        "Multi-User",
-        "Desarrollo de una aplicación web multiusuario utilizando React y Node.js. Implementación de funcionalidades como autenticación, gestión de usuarios y colaboración en tiempo real.",
+        "multiuser",
         [
             "./images/app market.png",
             "./images/appMarket(login).png",
             "./images/appMarket(registro).png",
-        ],
-        [
-            "Vista principal de la tienda",
-            "Pantalla de productos con likes",
-            "Carrito de compras en acción"
         ],
         [
             '<i class="text-4xl text-orange-600 bxl bx-html5"></i>',
@@ -123,8 +129,7 @@ btnMultiUser.addEventListener("click", (e) => {
 btnTurnero.addEventListener("click", (e) => {
     e.stopPropagation();
     abrirModal(
-        "Practical Session",
-        "Desarrollo de una aplicación de gestión de turnos para un servicio público. Implementación de funcionalidades como reserva de turnos, notificaciones y panel de administración.",
+        "turnero",
         [
             "./images/appTurnos(suscripcion).png",
             "./images/appTurnos(registroEmpresa).png",
@@ -133,11 +138,6 @@ btnTurnero.addEventListener("click", (e) => {
             "./images/appTurnos(dashboardEmpresa).png",
             "./images/appTurnos(registroCliente).png",
             "./images/appTurnos(dashboardCliente).png"
-        ],
-        [
-            "Practical Session es una aplicación SaaS, multi-tenant y esta compuesta por un software, una base de datos y multiples clientes. Esta app no va tener optimizaciones de CEO y va a mantener un flujo al rededor de 20 empresas, ya que al tener una sola DB debe ser sostenible el rendimineto para evitar demoras en el sistema. La seguridad de los datos tanto de las empresas como los clientes de cada empresa estan vinculados a un id_empresarial, sifrado con JWT. La creación de usuarios empresariales como clientes de empresas son ilimitados en la versión free, pero en el caso de no abonar dentro de los 6 meses el plan premium se borrara todos los datos vinculados. He buscado crear un software adaptable para cualquier empresa, automatizando la toma de turnos, dandole la posibilidad de deslegar trabajos de agenda.",
-            "Pantalla de productos con likes",
-            "Carrito de compras en acción"
         ],
         [
             '<i class="text-4xl text-orange-600 bxl bx-html5"></i>',
