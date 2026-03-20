@@ -70,7 +70,7 @@ export const translations = {
                 title: "Practical Session",
                 description: "",
                 imagesDesc: [
-                    "Practical Session es una aplicación SaaS, multi-tenant y esta compuesta por un software, una base de datos y multiples clientes. Esta app no va tener optimizaciones de CEO y va a mantener un flujo al rededor de 20 empresas, ya que al tener una sola DB debe ser sostenible el rendimineto para evitar demoras en el sistema. La seguridad de los datos tanto de las empresas como los clientes de cada empresa estan vinculados a un id_empresarial, sifrado con JWT. La creación de usuarios empresariales como clientes de empresas son ilimitados en la versión free, pero en el caso de no abonar dentro de los 6 meses el plan premium se borrara todos los datos vinculados. He buscado crear un software adaptable para cualquier empresa, automatizando la toma de turnos, dandole la posibilidad de deslegar trabajos de agenda.",
+                    "Practical Session es una aplicación SaaS multi-tenant compuesta por un software central, una base de datos única y múltiples clientes empresariales. La aplicación no tendrá optimización SEO y está pensada para un flujo aproximado de 20 empresas, cuidando el rendimiento del sistema al compartir una sola base de datos. La seguridad de los datos se garantiza mediante un id_empresarial y tokens JWT, definidos en el archivo .env. La creación de usuarios empresariales y clientes es ilimitada en la versión gratuita; sin embargo, si no se contrata el plan premium dentro de los 6 meses, todos los datos vinculados serán eliminados.El objetivo es ofrecer un software adaptable a cualquier empresa, automatizando la gestión de turnos y permitiendo delegar tareas de agenda de manera eficiente.",
                     "Registro empresa",
                     "Dashboard"
                 ]
@@ -137,7 +137,7 @@ export const translations = {
                 title: "Practical Session",
                 description: "System for managing appointments",
                 imagesDesc: [
-                    "Subscription",
+                    "Practical Session is a multi-tenant SaaS application composed of a central software, a single database, and multiple business clients. The application will not include SEO optimization and is designed to handle an approximate flow of 20 companies, ensuring system performance while sharing a single database. Data security is guaranteed through a business ID (id_empresarial) and JWT tokens, defined in the .end file. The creation of business users and company clients is unlimited in the free version; however, if the premium plan is not purchased within 6 months, all associated data will be deleted. The goal is to provide adaptable software for any company, automating appointment management and enabling efficient delegation of scheduling tasks",
                     "Company Registration",
                     "Dashboard"
                 ]
@@ -204,7 +204,7 @@ export const translations = {
                 title: "Practical Session",
                 description: "Sistema de gestão de agendamentos",
                 imagesDesc: [
-                    "Subscripción",
+                    "Practical Session é uma aplicação SaaS multi-tenant composta por um software central, um banco de dados único e múltiplos clientes empresariais. A aplicação não terá otimização de SEO e foi projetada para suportar um fluxo aproximado de 20 empresas, garantindo o desempenho do sistema ao compartilhar um único banco de dados.A segurança dos dados é garantida por meio de um id_empresarial e tokens JWT, definidos no arquivo .env. A criação de usuários empresariais e clientes é ilimitada na versão gratuita; no entanto, caso o plano premium não seja contratado dentro de 6 meses, todos os dados associados serão excluídos.O objetivo é oferecer um software adaptável a qualquer empresa, automatizando a gestão de agendamentos e permitindo a delegação eficiente de tarefas de agenda.",
                     "Registro de empresa",
                     "Dashboard"
                 ]
