@@ -134,7 +134,6 @@ btnTurnero.addEventListener("click", (e) => {
             "./images/appTurnos(suscripcion).png",
             "./images/appTurnos(registroEmpresa).png",
             "./images/appTurnos(registroAdmin).png",
-            "./images/appTurnos(loginAdmin).png",
             "./images/appTurnos(dashboardEmpresa).png",
             "./images/appTurnos(registroCliente).png",
             "./images/appTurnos(dashboardCliente).png"
