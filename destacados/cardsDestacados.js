@@ -47,41 +47,45 @@ export function abrirModal(projectKey, imagenes = [], tecnologias = [], github) 
     `).join("");
 
     contenedor.innerHTML = `
-        <h3 class="text-2xl font-semibold mb-2">${titulo}</h3>
+        <h3 class="text-2xl font-semibold mb-8">${titulo}</h3>
         <div class="flex flex-col gap-4 my-4">
-  <div class="flex justify-center items-stretch gap-6 m-auto">
-    <!-- Contenedor de miniaturas -->
-    <div class="flex flex-col gap-2 h-full">
-      ${imagenesHTML}
-    </div>
+            <div class="flex justify-center items-stretch gap-6 m-auto">
+                <!-- Contenedor de miniaturas -->
+                <div class="flex flex-col gap-2 h-full">
+                  ${imagenesHTML}
+                </div>
 
-    <!-- Contenedor de imagen principal y elementos -->
-    <div class="flex flex-col text-start h-full">
-      <div class="flex justify-center items-center h-full">
-  <img id="imagen-principal" class="w-[50vw]" src="${imagenes[0]}" alt="">
-</div>
-      <h4 class="font-semibold my-2">${translations[lang]["modal.description"]}</h4>
-      <p id="descripcion-principal" class="text-gray-400">${descripciones[0] || descripcion}</p>
-      <h5 class="font-semibold mt-2">${translations[lang]["modal.technologies"]}</h5>
-      <div class="flex flex-wrap gap-2 my-2">
-        ${tecnologiasHTML}
+                <!-- Contenedor de imagen principal y elementos -->
+                <div class="flex flex-col text-start  h-full md:w-[50vw]">
+                    <div class="flex justify-center items-center h-full">
+                    <img id="imagen-principal" class="w-[50vw]" src="${imagenes[0]}" alt="">
+                </div>
+                <h4 class="font-semibold my-2">${translations[lang]["modal.description"]}</h4>
+                <p id="descripcion-principal" class="text-gray-400">${descripciones[0] || descripcion}</p>
+                <h5 class="font-semibold mt-2">${translations[lang]["modal.technologies"]}</h5>
+                <div class="flex flex-wrap gap-2 my-2">
+                    ${tecnologiasHTML}
+                </div>
+                <div class="flex gap-3 mt-2">
+                    <a href="${githubLink}"
+                    class="bg-gray-700 rounded-lg p-2 flex items-center gap-2">
+                        ${translations[lang]["modal.repo"]}
+                        <i class="bxl bx-github text-2xl"></i>
+                    </a>
+                    
+                </div>
+            </div>
         </div>
-        <div class="flex gap-3 mt-2">
-      <a href="${githubLink}"
-         class="bg-gray-700 rounded-lg p-2 flex items-center gap-2">
-            ${translations[lang]["modal.repo"]}
-        <i class="bxl bx-github text-2xl"></i>
-        </a>
-        <a href="#"
-         class="bg-blue-600 rounded-lg p-2 flex items-center gap-2">
-            <span>Demo</span>
-            <i class="bxf bx-arrow-in-right-square-half text-2xl"></i>
-        </a>
-        </div>
-    </div>
-  </div>
-</div>
     `;
+
+    /*
+    Futuro Demo:
+    <a href="#"
+    class="bg-blue-600 rounded-lg p-2 flex items-center gap-2">
+        <span>Demo</span>
+        <i class="bxf bx-arrow-in-right-square-half text-2xl"></i>
+    </a>
+    */
 
     contenedorCards.appendChild(contenedor);
 

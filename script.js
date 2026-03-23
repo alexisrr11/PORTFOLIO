@@ -34,6 +34,11 @@ abrirCerrar(btnCerrarDatos, modalDatos);
 abrirCerrar(btnIdiomasFull, modalIdiomasFull);
 abrirCerrar(btnIdiomaMd, modalIdiomasMd);
 
+document.getElementById("btn-mas-proyectos").addEventListener("click", () => {
+    document.getElementById("mas-proyectos").classList.toggle("hidden");
+    document.getElementById("arrow-rotate").classList.toggle("rotate-180");
+});
+
 document.addEventListener('DOMContentLoaded', function () {
 
     // Smooth scroll para navegación y manejo de enlace activo
