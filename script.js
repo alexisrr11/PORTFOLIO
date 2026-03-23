@@ -34,10 +34,11 @@ abrirCerrar(btnCerrarDatos, modalDatos);
 abrirCerrar(btnIdiomasFull, modalIdiomasFull);
 abrirCerrar(btnIdiomaMd, modalIdiomasMd);
 
-document.getElementById("btn-mas-proyectos").addEventListener("click", () => {
+/*document.getElementById("btn-mas-proyectos").addEventListener("click", () => {
     document.getElementById("mas-proyectos").classList.toggle("hidden");
     document.getElementById("arrow-rotate").classList.toggle("rotate-180");
 });
+*/
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -53,20 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-            const href = this.getAttribute('href');
-            const targetId = href.substring(1);
-            const targetSection = document.getElementById(targetId);
 
-            //Actualizar el hash sin causar salto
-            history.pushState(null, '', href);
-            highlightLink(href);
-
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-        });
-    });
     const currentHash = window.location.hash || '#acerca';
     highlightLink(currentHash);
 
