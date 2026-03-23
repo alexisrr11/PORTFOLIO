@@ -49,16 +49,16 @@ export function abrirModal(projectKey, imagenes = [], tecnologias = [], github) 
     contenedor.innerHTML = `
         <h3 class="text-2xl font-semibold mb-8">${titulo}</h3>
         <div class="flex flex-col gap-4 my-4">
-            <div class="flex justify-center items-stretch gap-6 m-auto">
+            <div class=" justify-center items-stretch gap-6 m-auto md:flex">
                 <!-- Contenedor de miniaturas -->
-                <div class="flex flex-col gap-2 h-full">
+                <div class="grid grid-cols-3 gap-2 h-full md:flex-col mb-4 md:flex">
                   ${imagenesHTML}
                 </div>
 
                 <!-- Contenedor de imagen principal y elementos -->
                 <div class="flex flex-col text-start  h-full md:w-[50vw]">
                     <div class="flex justify-center items-center h-full">
-                    <img id="imagen-principal" class="w-[50vw]" src="${imagenes[0]}" alt="">
+                    <img id="imagen-principal" class="w-full h-auto object-contain max-h-[300px] md:max-h-[500px]" src="${imagenes[0]}" alt="">
                 </div>
                 <h4 class="font-semibold my-2">${translations[lang]["modal.description"]}</h4>
                 <p id="descripcion-principal" class="text-gray-400">${descripciones[0] || descripcion}</p>
