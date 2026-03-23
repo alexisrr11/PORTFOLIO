@@ -42,7 +42,7 @@ export function abrirModal(projectKey, imagenes = [], tecnologias = [], github) 
     // Miniaturas con data-index
     const imagenesHTML = imagenes.map((img, index) => `
         <img src="${img}" alt="${titulo}" 
-             class="min-w-32 max-w-32 h-auto cursor-pointer" 
+             class="min-w-28 max-w-28 h-auto cursor-pointer" 
              data-index="${index}">
     `).join("");
 
