@@ -51,7 +51,7 @@ export function abrirModal(projectKey, imagenes = [], tecnologias = [], github) 
         <div class="flex flex-col gap-4 my-4">
             <div class=" justify-center items-stretch gap-6 m-auto md:flex">
                 <!-- Contenedor de miniaturas -->
-                <div class="grid grid-cols-3 gap-2 h-full md:flex-col mb-4 md:flex">
+                <div class="grid grid-cols-3 gap-x-6 gap-y-2 h-full md:flex-col mb-4 md:flex">
                   ${imagenesHTML}
                 </div>
 
