@@ -52,7 +52,7 @@ export const translations = {
                 title: "Saturn E-Commerce",
                 description: "Descripción general del proyecto",
                 imagesDesc: [
-                    "Vista principal de la tienda",
+                    "Saturn es una aplicación de comercio electrónico diseñada para ofrecer una experiencia dinámica y participativa. Su enfoque no es solo vender productos, sino generar interacción entre usuarios mediante un sistema de modales de compra y modales de likes, creando un entorno más social y entretenido dentro del proceso de compra.",
                     "Pantalla de productos con likes",
                     "Carrito de compras en acción"
                 ]
@@ -61,7 +61,7 @@ export const translations = {
                 title: "Multi-User",
                 description: "Aplicación web multiusuario con React y Node.js",
                 imagesDesc: [
-                    "Vista principal",
+                    "Una aplicación de listas colaborativas que permite a múltiples usuarios crear, organizar y gestionar tareas o compras en tiempo real. Aunque está diseñada principalmente para facilitar la organización de compras familiares, grupales o de equipo, su estructura flexible la convierte en una herramienta útil para cualquier tipo de planificación: desde proyectos de trabajo hasta recordatorios personales.",
                     "Login",
                     "Registro"
                 ]
@@ -71,8 +71,11 @@ export const translations = {
                 description: "",
                 imagesDesc: [
                     "Practical Session es una aplicación SaaS multi-tenant compuesta por un software central, una base de datos única y múltiples clientes empresariales. La aplicación no tendrá optimización SEO y está pensada para un flujo aproximado de 20 empresas, cuidando el rendimiento del sistema al compartir una sola base de datos. La seguridad de los datos se garantiza mediante un id_empresarial y tokens JWT, definidos en el archivo .env. La creación de usuarios empresariales y clientes es ilimitada en la versión gratuita; sin embargo, si no se contrata el plan premium dentro de los 6 meses, todos los datos vinculados serán eliminados.El objetivo es ofrecer un software adaptable a cualquier empresa, automatizando la gestión de turnos y permitiendo delegar tareas de agenda de manera eficiente.",
-                    "Registro empresa",
-                    "Dashboard"
+                    "Registro de empresa",
+                    "Registro de administradores de empresa",
+                    "Dashboard de administradores",
+                    "Registro de clientes",
+                    "Dashboard de clientes"
                 ]
             }
         }
@@ -119,7 +122,7 @@ export const translations = {
                 title: "E-Commerce",
                 description: "Description of the project",
                 imagesDesc: [
-                    "Main view of the store",
+                    "Saturn is an e-commerce application designed to deliver a dynamic and engaging experience. Its focus is not only on selling products but also on fostering user interaction through a system of purchase modals and like modals, creating a more social and entertaining environment within the shopping process.",
                     "Product screen with likes",
                     "Shopping cart in action"
                 ]
@@ -128,7 +131,7 @@ export const translations = {
                 title: "Multi-User",
                 description: "Multi-user web application with React and Node.js",
                 imagesDesc: [
-                    "Main view",
+                    "A collaborative list application that allows multiple users to create, organize, and manage tasks or shopping items in real time. Although it is primarily designed to facilitate the organization of family, group, or team shopping, its flexible structure makes it a useful tool for any type of planning: from work projects to personal reminders.",
                     "Login",
                     "Registration"
                 ]
@@ -186,7 +189,7 @@ export const translations = {
                 title: "Saturn E-Commerce",
                 description: "Descrição do projeto",
                 imagesDesc: [
-                    "Vista principal da loja",
+                    "Saturn é um aplicativo de comércio eletrônico projetado para oferecer uma experiência dinâmica e participativa. Seu foco não é apenas vender produtos, mas também gerar interação entre os usuários por meio de um sistema de modais de compra e modais de curtidas, criando um ambiente mais social e divertido dentro do processo de compra.",
                     "Tela de produtos com likes",
                     "Carrinho de compras em ação"
                 ]
@@ -195,7 +198,7 @@ export const translations = {
                 title: "Multi-User",
                 description: "Descrição do projeto",
                 imagesDesc: [
-                    "Vista principal",
+                    "Um aplicativo de listas colaborativas que permite a vários usuários criar, organizar e gerenciar tarefas ou compras em tempo real. Embora tenha sido projetado principalmente para facilitar a organização de compras familiares, em grupo ou em equipe, sua estrutura flexível o torna uma ferramenta útil para qualquer tipo de planejamento: desde projetos de trabalho até lembretes pessoais.",
                     "Login",
                     "Registro"
                 ]
