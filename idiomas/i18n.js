@@ -43,7 +43,7 @@ export const translations = {
         "modal.age": "Edad:",
         "modal.my.age": "30 Años",
         "modal.goals": "Objetivos",
-        "modal.goals.description": "Mi objetivo es crear una sólida base en arquitectura de software, combinando frontend y backend para construir aplicaciones completas. También busco fortalecer mis ideas en productos funcionales sobre sistemas integrales, tomando siempre las mejores decisiones posibles en cuanto a estructura y resolución de problemas reales. En el futuro espero dominar un stack con TypeScript aplicado en Next.js, utilizando herramientas como Prisma y Docker.",
+        "modal.goals.description": "Mi objetivo es desarrollarme como builder enfocado en arquitectura de software, diseñando aplicaciones completas donde pueda tomar decisiones técnicas sobre estructura, escalabilidad y mantenibilidad. Busco construir sistemas reales que integren frontend y backend, priorizando claridad en la lógica, separación de responsabilidades y resolución de problemas concretos. Actualmente me enfoco en consolidar un stack basado en TypeScript con Next.js, Prisma y Docker, con el objetivo de crear aplicaciones robustas, desplegables y listas para entornos productivos.",
         "modal.description":"Descripción",
         "modal.technologies": "Tecnologías",
         "modal.repo": "Repositorio",
@@ -55,7 +55,8 @@ export const translations = {
                     "Saturn es una aplicación de comercio electrónico diseñada para ofrecer una experiencia dinámica y participativa. Su enfoque no es solo vender productos, sino generar interacción entre usuarios mediante un sistema de modales de compra y modales de likes, creando un entorno más social y entretenido dentro del proceso de compra.",
                     "Pantalla de productos con likes",
                     "Carrito de compras en acción"
-                ]
+                ],
+                github: "https://github.com/alexisrr11/newE-commerce"
             },
             multiuser: {
                 title: "Multi-User",
@@ -64,7 +65,8 @@ export const translations = {
                     "Una aplicación de listas colaborativas que permite a múltiples usuarios crear, organizar y gestionar tareas o compras en tiempo real. Aunque está diseñada principalmente para facilitar la organización de compras familiares, grupales o de equipo, su estructura flexible la convierte en una herramienta útil para cualquier tipo de planificación: desde proyectos de trabajo hasta recordatorios personales.",
                     "Login",
                     "Registro"
-                ]
+                ],
+                github: "https://github.com/alexisrr11/appMarketDefinitivo"
             },
             turnero: {
                 title: "Practical Session",
@@ -76,7 +78,8 @@ export const translations = {
                     "Dashboard de administradores",
                     "Registro de clientes",
                     "Dashboard de clientes"
-                ]
+                ],
+                github: "https://github.com/alexisrr11/SaaSTurnero"
             }
         }
     },
@@ -113,7 +116,7 @@ export const translations = {
         "modal.age": "Age:",
         "modal.my.age": "30 years",
         "modal.goals": "Goals",
-        "modal.goals.description": "My goal is to build a solid foundation in software architecture, combining frontend and backend to develop complete applications. I also aim to strengthen my ideas into functional products within integrated systems, always making the best possible decisions regarding structure and solving real-world problems. In the future, I hope to master a stack with TypeScript applied in Next.js, using tools such as Prisma and Docker.",
+        "modal.goals.description": "My goal is to grow as a builder focused on software architecture, designing complete applications where I can make technical decisions regarding structure, scalability, and maintainability. I aim to build real systems that integrate both frontend and backend, prioritizing clear logic, separation of concerns, and solving concrete problems. Currently, I am focused on consolidating a stack based on TypeScript with Next.js, Prisma, and Docker, with the goal of creating robust, deployable applications ready for production environments.",
         "modal.description":"Description",
         "modal.technologies": "Technologies",
         "modal.repo": "Repository",
@@ -125,7 +128,8 @@ export const translations = {
                     "Saturn is an e-commerce application designed to deliver a dynamic and engaging experience. Its focus is not only on selling products but also on fostering user interaction through a system of purchase modals and like modals, creating a more social and entertaining environment within the shopping process.",
                     "Product screen with likes",
                     "Shopping cart in action"
-                ]
+                ],
+                github: "https://github.com/alexisrr11/newE-commerce"
             },
             multiuser: {
                 title: "Multi-User",
@@ -134,7 +138,8 @@ export const translations = {
                     "A collaborative list application that allows multiple users to create, organize, and manage tasks or shopping items in real time. Although it is primarily designed to facilitate the organization of family, group, or team shopping, its flexible structure makes it a useful tool for any type of planning: from work projects to personal reminders.",
                     "Login",
                     "Registration"
-                ]
+                ],
+                github: "https://github.com/alexisrr11/appMarketDefinitivo"
             },
             turnero: {
                 title: "Practical Session",
@@ -143,7 +148,8 @@ export const translations = {
                     "Practical Session is a multi-tenant SaaS application composed of a central software, a single database, and multiple business clients. The application will not include SEO optimization and is designed to handle an approximate flow of 20 companies, ensuring system performance while sharing a single database. Data security is guaranteed through a business ID (id_empresarial) and JWT tokens, defined in the .end file. The creation of business users and company clients is unlimited in the free version; however, if the premium plan is not purchased within 6 months, all associated data will be deleted. The goal is to provide adaptable software for any company, automating appointment management and enabling efficient delegation of scheduling tasks",
                     "Company Registration",
                     "Dashboard"
-                ]
+                ],
+                github: "https://github.com/alexisrr11/SaaSTurnero"
             }
         }
     },
@@ -180,7 +186,7 @@ export const translations = {
         "modal.age": "Idade:",
         "modal.my.age": "30 anos",
         "modal.goals": "Objetivos",
-        "modal.goals.description": "Meu objetivo é criar uma base sólida em arquitetura de software, combinando frontend e backend para desenvolver aplicações completas. Também busco transformar minhas ideias em produtos funcionais dentro de sistemas integrados, sempre tomando as melhores decisões possíveis em relação à estrutura e à resolução de problemas reais. No futuro, espero dominar um stack com TypeScript aplicado em Next.js, utilizando ferramentas como Prisma e Docker.",
+        "modal.goals.description": "Meu objetivo é me desenvolver como um builder focado em arquitetura de software, projetando aplicações completas onde eu possa tomar decisões técnicas sobre estrutura, escalabilidade e manutenibilidade. Busco construir sistemas reais que integrem frontend e backend, priorizando clareza na lógica, separação de responsabilidades e a resolução de problemas concretos. Atualmente, estou focado em consolidar um stack baseado em TypeScript com Next.js, Prisma e Docker, com o objetivo de criar aplicações robustas, prontas para deploy e adequadas para ambientes de produção.",
         "modal.description":"Descrição",
         "modal.technologies": "Tecnologias",
         "modal.repo": "Repositório",
@@ -192,7 +198,8 @@ export const translations = {
                     "Saturn é um aplicativo de comércio eletrônico projetado para oferecer uma experiência dinâmica e participativa. Seu foco não é apenas vender produtos, mas também gerar interação entre os usuários por meio de um sistema de modais de compra e modais de curtidas, criando um ambiente mais social e divertido dentro do processo de compra.",
                     "Tela de produtos com likes",
                     "Carrinho de compras em ação"
-                ]
+                ],
+                github: "https://github.com/alexisrr11/newE-commerce"
             },
             multiuser: {
                 title: "Multi-User",
@@ -201,7 +208,8 @@ export const translations = {
                     "Um aplicativo de listas colaborativas que permite a vários usuários criar, organizar e gerenciar tarefas ou compras em tempo real. Embora tenha sido projetado principalmente para facilitar a organização de compras familiares, em grupo ou em equipe, sua estrutura flexível o torna uma ferramenta útil para qualquer tipo de planejamento: desde projetos de trabalho até lembretes pessoais.",
                     "Login",
                     "Registro"
-                ]
+                ],
+                github: "https://github.com/alexisrr11/appMarketDefinitivo"
             },
             turnero: {
                 title: "Practical Session",
@@ -210,7 +218,8 @@ export const translations = {
                     "Practical Session é uma aplicação SaaS multi-tenant composta por um software central, um banco de dados único e múltiplos clientes empresariais. A aplicação não terá otimização de SEO e foi projetada para suportar um fluxo aproximado de 20 empresas, garantindo o desempenho do sistema ao compartilhar um único banco de dados.A segurança dos dados é garantida por meio de um id_empresarial e tokens JWT, definidos no arquivo .env. A criação de usuários empresariais e clientes é ilimitada na versão gratuita; no entanto, caso o plano premium não seja contratado dentro de 6 meses, todos os dados associados serão excluídos.O objetivo é oferecer um software adaptável a qualquer empresa, automatizando a gestão de agendamentos e permitindo a delegação eficiente de tarefas de agenda.",
                     "Registro de empresa",
                     "Dashboard"
-                ]
+                ],
+                github: "https://github.com/alexisrr11/SaaSTurnero"
             }
         }
     }

@@ -7,7 +7,7 @@ const btnTurnero = document.getElementById("btn-app-turnero");
 const modalProyectos = document.getElementById("modal-proyectos");
 export let currentProject = null;
 
-export function abrirModal(projectKey, imagenes = [], tecnologias = []) {
+export function abrirModal(projectKey, imagenes = [], tecnologias = [], github) {
 
     const lang = getLang();
     const t = translations[lang]?.projects?.[projectKey];
@@ -20,8 +20,11 @@ export function abrirModal(projectKey, imagenes = [], tecnologias = []) {
     const titulo = t.title;
     const descripcion = t.description;
     const descripciones = t.imagesDesc;
+    const githubLink = t.github;
 
-    currentProject = { projectKey, imagenes, tecnologias };
+    console.log(githubLink);
+
+    currentProject = { projectKey, imagenes, tecnologias, github };
 
     contenedorCards.innerHTML = "";
     modalProyectos.classList.remove("hidden");
@@ -63,11 +66,18 @@ export function abrirModal(projectKey, imagenes = [], tecnologias = []) {
       <div class="flex flex-wrap gap-2 my-2">
         ${tecnologiasHTML}
         </div>
-      <a href="#"
-         class="bg-gray-700 rounded-lg p-4 text-start">
+        <div class="flex gap-3 mt-2">
+      <a href="${githubLink}"
+         class="bg-gray-700 rounded-lg p-2 flex items-center gap-2">
             ${translations[lang]["modal.repo"]}
         <i class="bxl bx-github text-2xl"></i>
-      </a>
+        </a>
+        <a href="#"
+         class="bg-blue-600 rounded-lg p-2 flex items-center gap-2">
+            <span>Demo</span>
+            <i class="bxf bx-arrow-in-right-square-half text-2xl"></i>
+        </a>
+        </div>
     </div>
   </div>
 </div>
@@ -102,7 +112,8 @@ btnECommerce.addEventListener("click", (e) => {
             '<i class="text-4xl text-orange-600 bxl bx-html5"></i>',
             '<i class="text-4xl text-blue-500 bxl bx-css3"></i>',
             '<i class="text-4xl text-yellow-400 bxl bx-javascript"></i>'
-        ]
+        ],
+        "https://github.com/alexisrr11/HeladeriaDulceNieve"
     );
 });
 
@@ -122,7 +133,8 @@ btnMultiUser.addEventListener("click", (e) => {
             '<i class="text-4xl text-green-400 bxl bx-nodejs"></i>',
             '<i class="text-4xl text-gray-400 bxl bx-express-js"></i>',
             '<i class="text-4xl text-blue-400 bxl bx-postgresql"></i>'
-        ]
+        ],
+        "https://github.com/alexisrr11/HeladeriaDulceNieve"
     );
 });
 
@@ -145,7 +157,8 @@ btnTurnero.addEventListener("click", (e) => {
             '<i class="text-4xl text-green-400 bxl bx-nodejs"></i>',
             '<i class="text-4xl text-gray-400 bxl bx-express-js"></i>',
             '<i class="text-4xl text-blue-400 bxl bx-postgresql"></i>'
-        ]
+        ],
+        "https://github.com/alexisrr11/HeladeriaDulceNieve"
     );
 });
 
