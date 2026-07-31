@@ -9,9 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="./destacados/cardsDestacados.js"></script>
     <script type="module" src="./idiomas/i18n.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/devicons@2.0.1/dist/devicons.css" />
     <style>
-        html {scroll-behavior: smooth;}
-        
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             --s: 37px;
             /* control the size*/
@@ -119,7 +122,8 @@
             <div class="text-center">
                 <img src="https://alexisrr11.github.io/RodriguezAlexis/images/alexisfoto.png" alt="Foto de perfil"
                     class="w-40 h-40 rounded-full border-2 border-blue-600/70 mx-auto mb-4">
-                <h2 data-i18n="hero.title" class="text-3xl font-bold text-gray-100 mb-4 md:text-4xl">Hola, soy Rodriguez Alexis</h2>
+                <h2 data-i18n="hero.title" class="text-3xl font-bold text-gray-100 mb-4 md:text-4xl">Hola, soy Rodriguez
+                    Alexis</h2>
                 <h3 data-i18n="hero.subtitle" class="text-xl text-gray-300 mb-6">
                     Desarrollador Full-Stack con leve orientación al Front-End
                 </h3>
@@ -177,8 +181,16 @@
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">JavaScript</h3>
                 </div>
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
+                    <i class="text-6xl text-blue-500 bxl bx-typescript"></i>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">TypeScript</h3>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-blue-400 bxl bx-react"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">React</h3>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
+                    <i class="text-6xl text-orange-400 devicons devicons-astro-icon"></i>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Astro</h3>
                 </div>
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-blue-400 bxl bx-tailwind-css"></i>
@@ -195,6 +207,10 @@
                     <i class="text-6xl text-blue-400 bxl bx-postgresql"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">PostgreSQL</h3>
                 </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
+                    <i class="text-6xl text-purple-400 bxl bx-prisma-orm"></i>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Prisma ORM</h3>
+                </div>
                 <div>
                     <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                         <i class="text-6xl text-orange-500 bxl bx-git"></i>
@@ -210,22 +226,16 @@
             </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
+                
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
-                    <i class="text-6xl text-blue-500 bxl bx-typescript"></i>
-                    <h3 class="text-xl font-semibold text-gray-100 mb-2">TypeScript</h3>
-                </div>
-
-                <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
-                    <i class="text-6xl text-purple-400 bxl bx-prisma-orm"></i>
-                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Prisma ORM</h3>
+                    <i class="text-6xl text-gray-900 bxl bx-next-js"></i>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Next</h3>
                 </div>
 
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-blue-500 bxl bx-docker"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">Docker</h3>
                 </div>
-
             </div>
         </div>
     </section>
