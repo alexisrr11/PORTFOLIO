@@ -69,8 +69,8 @@
                 <div class="hidden md:flex items-center space-x-4">
                     <a data-i18n="nav.about" href="#acerca" class="text-gray-300 hover:text-blue-400">Acerca de mí</a>
                     <a data-i18n="nav.skills" href="#skills" class="text-gray-300 hover:text-blue-400">Habilidades</a>
-                    <a data-i18n="nav.projects" href="#proyectos"
-                        class="text-gray-300 hover:text-blue-400">Proyectos</a>
+                    <a data-i18n="nav.projects" href="#proyectos" class="text-gray-300 hover:text-blue-400">Proyectos</a>
+                    <a data-i18n="nav.projects" href="#formacion" class="text-gray-300 hover:text-blue-400">Formación</a>
                     <a data-i18n="nav.contact" href="#contactos" class="text-gray-300 hover:text-blue-400">Contactos</a>
                     <button id="btn-idiomas-full" class="flex items-center text-2xl hover:text-blue-400">
                         <i class="bxf bx-translate"></i>
@@ -93,8 +93,8 @@
                     class="hidden md:hidden flex flex-col gap-3 bg-gray-900 absolute top-16 left-0 rounded-md shadow-lg p-2 w-full h-auto">
                     <a data-i18n="nav.about" href="#acerca" class="text-gray-300 hover:text-blue-400">Acerca de mí</a>
                     <a data-i18n="nav.skills" href="#skills" class="text-gray-300 hover:text-blue-400">Habilidades</a>
-                    <a data-i18n="nav.projects" href="#proyectos"
-                        class="text-gray-300 hover:text-blue-400">Proyectos</a>
+                    <a data-i18n="nav.projects" href="#proyectos" class="text-gray-300 hover:text-blue-400">Proyectos</a>
+                    <a data-i18n="nav.projects" href="#formacion" class="text-gray-300 hover:text-blue-400">Formación</a>
                     <a data-i18n="nav.contact" href="#contactos" class="text-gray-300 hover:text-blue-400">Contactos</a>
                     <button id="btn-idiomas-md" class="flex items-center text-2xl hover:text-blue-400">
                         <i class="bxf bx-translate"></i>
@@ -226,7 +226,7 @@
             </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
+
                 <div class="bg-gray-700 p-6 rounded-lg shadow-md text-center">
                     <i class="text-6xl text-gray-900 bxl bx-next-js"></i>
                     <h3 class="text-xl font-semibold text-gray-100 mb-2">Next</h3>
@@ -276,8 +276,276 @@
         </div>
     </section>
 
+    <!-- Formación -->
+    <section id="formacion" class="py-12 bg-gray-800/90 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 data-i18n="education.title" class="text-3xl font-bold text-center text-gray-100 mb-4">
+                Formación y aprendizaje
+            </h2>
+
+            <p data-i18n="education.description" class="max-w-3xl mx-auto text-center text-gray-400 mb-10">
+                Mi formación combina cursos especializados, aprendizaje autodidacta
+                y experiencia práctica desarrollando y desplegando proyectos completos.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Curso de React -->
+                <article class="bg-gray-700 rounded-lg shadow-md border border-gray-600 overflow-hidden">
+
+                    <div class="p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="flex items-center justify-center min-w-14 h-14 rounded-lg bg-blue-500/10">
+                                <i class="text-4xl text-blue-400 bxl bx-react"></i>
+                            </div>
+
+                            <div>
+                                <span data-i18n="education.course.label" class="text-sm font-semibold text-blue-400">
+                                    Curso realizado
+                                </span>
+
+                                <h3 data-i18n="education.course.title" class="text-xl font-semibold text-gray-100 mt-1">
+                                    Desarrollo de aplicaciones con React
+                                </h3>
+
+                                <p class="text-gray-400 mt-2">
+                                    <span data-i18n="education.course.institution">
+                                        Institución:
+                                    </span>
+
+                                    <span data-i18n="education.course.institutionName"
+                                        class="text-gray-200 font-medium">
+                                        Ministerio de educación de la Ciudad de Buenos Aires
+                                    </span>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="flex justify-around gap-4">
+                            <button id="btn-leer-curso-react" type="button"
+                                class="pt-4 text-sm text-blue-400 text-start font-semibold hover:text-blue-300"
+                                aria-expanded="false" aria-controls="contenido-curso-react">
+                                Leer más
+                            </button>
+
+                            <button id="btn-ver-diploma-react" type="button"
+                                class="pt-4 text-sm text-blue-400 text-start font-semibold hover:text-blue-300"
+                                data-diploma-src="./images/diploma react.jpeg"
+                                aria-label="Ver diploma del curso de React">
+                                Ver diploma
+                            </button>
+                        </div>
+
+                        <div id="contenido-curso-react" class="hidden">
+
+                            <p data-i18n="education.course.description" class="text-gray-300 mt-6">
+                                Formación práctica orientada al desarrollo de una aplicación
+                                completa con React, desde su creación hasta su despliegue.
+                            </p>
+
+                            <ul class="mt-5 space-y-3 text-sm text-gray-300">
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-check-circle text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.course.item1">
+                                        Creación de aplicaciones React desde cero utilizando Vite.
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-check-circle text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.course.item2">
+                                        Gestión de estado mediante useState y Context API.
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-check-circle text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.course.item3">
+                                        Desarrollo de rutas dinámicas y protegidas para una navegación segura.
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-check-circle text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.course.item4">
+                                        Construcción de formularios con validaciones y autenticación de usuarios.
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-check-circle text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.course.item5">
+                                        Desarrollo de un CRUD para la gestión de productos de un e-commerce.
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-check-circle text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.course.item6">
+                                        Estilización de aplicaciones con Bootstrap y styled-components.
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-check-circle text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.course.item7">
+                                        Integración de Firebase y Firestore para almacenamiento y servicios backend.
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-check-circle text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.course.item8">
+                                        Despliegue de la aplicación final en una plataforma de hosting.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <!-- Formación autodidacta -->
+                <article class="bg-gray-700 p-6 rounded-lg shadow-md border border-gray-600">
+                    <div class="flex items-start gap-4">
+                        <div class="flex items-center justify-center min-w-14 h-14 rounded-lg bg-green-500/10">
+                            <i class="text-4xl text-green-400 bxf bx-book-open"></i>
+                        </div>
+
+                        <div>
+                            <span data-i18n="education.selfTaught.label" class="text-sm font-semibold text-green-400">
+                                Formación autodidacta
+                            </span>
+
+                            <h3 data-i18n="education.selfTaught.title" class="text-xl font-semibold text-gray-100 mt-1">
+                                Desarrollo web Full Stack
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <button id="btn-leer-autodidacta" type="button"
+                        class="pt-4 text-sm text-blue-400 text-start font-semibold hover:text-blue-300"
+                        aria-expanded="false" aria-controls="contenido-autodidacta">
+                        Leer más
+                    </button>
+
+                    <div id="contenido-autodidacta" class="hidden">
+
+                        <p data-i18n="education.selfTaught.description" class="text-gray-300 mt-6">
+                            Aprendizaje continuo mediante documentación, práctica y
+                            construcción de proyectos reales, abarcando frontend,
+                            backend, bases de datos, arquitectura y despliegue.
+                        </p>
+
+                        <div class="mt-6 space-y-6">
+                            <div>
+                                <h4 data-i18n="education.selfTaught.developmentTitle"
+                                    class="font-semibold text-gray-100 mb-3">
+                                    Desarrollo y arquitectura
+                                </h4>
+
+                                <ul class="space-y-3 text-sm text-gray-300">
+                                    <li class="flex items-start gap-3">
+                                        <i class="bx bx-code-alt text-lg text-green-400 mt-0.5"></i>
+                                        <span data-i18n="education.selfTaught.item1">
+                                            Desarrollo de aplicaciones con JavaScript, TypeScript, React,
+                                            Node.js y Express.
+                                        </span>
+                                    </li>
+
+                                    <li class="flex items-start gap-3">
+                                        <i class="bx bx-code-alt text-lg text-green-400 mt-0.5"></i>
+                                        <span data-i18n="education.selfTaught.item2">
+                                            Construcción de APIs, endpoints, autenticación y arquitecturas
+                                            backend basadas en separación de responsabilidades.
+                                        </span>
+                                    </li>
+
+                                    <li class="flex items-start gap-3">
+                                        <i class="bx bx-code-alt text-lg text-green-400 mt-0.5"></i>
+                                        <span data-i18n="education.selfTaught.item3">
+                                            Uso de Prisma ORM, Git y flujos de trabajo orientados al
+                                            mantenimiento de proyectos.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 data-i18n="education.selfTaught.databaseTitle"
+                                    class="font-semibold text-gray-100 mb-3">
+                                    Bases de datos
+                                </h4>
+
+                                <ul class="space-y-3 text-sm text-gray-300">
+                                    <li class="flex items-start gap-3">
+                                        <i class="bx bx-data text-lg text-purple-400 mt-0.5"></i>
+                                        <span data-i18n="education.selfTaught.item4">
+                                            Trabajo con PostgreSQL en aplicaciones desplegadas y entornos
+                                            de producción.
+                                        </span>
+                                    </li>
+
+                                    <li class="flex items-start gap-3">
+                                        <i class="bx bx-data text-lg text-purple-400 mt-0.5"></i>
+                                        <span data-i18n="education.selfTaught.item5">
+                                            Uso de SQLite como base de datos para desarrollo local,
+                                            prototipos y entornos de prueba.
+                                        </span>
+                                    </li>
+
+                                    <li class="flex items-start gap-3">
+                                        <i class="bx bx-data text-lg text-purple-400 mt-0.5"></i>
+                                        <span data-i18n="education.selfTaught.item6">
+                                            Configuración y despliegue de bases de datos PostgreSQL
+                                            administradas mediante Neon.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 data-i18n="education.selfTaught.deploymentTitle"
+                                class="font-semibold text-gray-100 mb-3">
+                                Despliegue y producción
+                            </h4>
+
+                            <ul class="space-y-3 text-sm text-gray-300">
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-cloud-upload text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.selfTaught.item7">
+                                        Experiencia desplegando aplicaciones frontend en Vercel.
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-cloud-upload text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.selfTaught.item8">
+                                        Despliegue de APIs y servicios backend en Render.
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <i class="bx bx-cloud-upload text-lg text-blue-400 mt-0.5"></i>
+                                    <span data-i18n="education.selfTaught.item9">
+                                        Configuración de variables de entorno, migraciones y conexiones
+                                        entre frontend, backend y base de datos.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Contacto -->
-    <section id="contactos" class="py-12 bg-gray-800/90 backdrop-blur-sm">
+    <section id="contactos" class="py-12 bg-gray-900/70 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 data-i18n="contacts.title" class="text-3xl font-bold text-center text-gray-100 mb-8">Contactos</h2>
 
