@@ -48,6 +48,13 @@ export const translations = {
         "modal.technologies": "Tecnologías",
         "modal.repo": "Repositorio",
 
+        "nav.education": "Formación",
+        "modal.demo": "Ver demo",
+        "education.readMore": "Leer más",
+        "education.readLess": "Leer menos",
+        "education.diploma.loading": "Cargando diploma...",
+        "education.diploma.error": "No se pudo cargar la imagen del diploma.",
+
         "education.title": "Formación y aprendizaje",
         "education.description": "Mi formación combina cursos especializados, aprendizaje autodidacta y experiencia práctica desarrollando y desplegando proyectos completos.",
 
@@ -85,178 +92,324 @@ export const translations = {
         "education.selfTaught.item9": "Configuración de variables de entorno, migraciones y conexiones entre frontend, backend y base de datos.",
 
         projects: {
-            ecommerce: {
-                title: "Saturn E-Commerce",
-                description: "Descripción general del proyecto",
+            abogados: {
+                title: "App para estudios jurídicos",
+                description: "Aplicación web orientada a la gestión de estudios jurídicos.",
                 imagesDesc: [
-                    "Saturn es una aplicación de comercio electrónico diseñada para ofrecer una experiencia dinámica y participativa. Su enfoque no es solo vender productos, sino generar interacción entre usuarios mediante un sistema de modales de compra y modales de likes, creando un entorno más social y entretenido dentro del proceso de compra.",
-                    "Pantalla de productos con likes",
-                    "Carrito de compras en acción"
+                    "Sistema diseñado para centralizar la gestión de clientes, expedientes, tareas, plazos y documentos de un estudio jurídico. La aplicación busca simplificar el trabajo diario mediante formularios claros, información organizada y acceso rápido a los datos más importantes.",
+                    "Vista para administrar expedientes, clientes y datos relacionados con cada caso."
                 ],
-                github: "https://github.com/alexisrr11/newE-commerce"
+                github: "https://github.com/alexisrr11/Muestra-para-estudios-juridicos",
+                demo: "https://muestra-para-estudios-juridicos.vercel.app/"
             },
-            multiuser: {
-                title: "Multi-User",
-                description: "Aplicación web multiusuario con React y Node.js",
+
+            agenda: {
+                title: "Agenda de contactos",
+                description: "Aplicación web para registrar, organizar y gestionar contactos.",
                 imagesDesc: [
-                    "Una aplicación de listas colaborativas que permite a múltiples usuarios crear, organizar y gestionar tareas o compras en tiempo real. Aunque está diseñada principalmente para facilitar la organización de compras familiares, grupales o de equipo, su estructura flexible la convierte en una herramienta útil para cualquier tipo de planificación: desde proyectos de trabajo hasta recordatorios personales.",
-                    "Login",
-                    "Registro"
+                    "Aplicación de gestión de contactos que permite registrar empresas o personas, almacenar números telefónicos, definir estados y programar fechas de seguimiento. El sistema facilita la organización de contactos y centraliza la información necesaria para realizar futuras comunicaciones.",
+                    "Formulario para registrar y editar la información de los contactos.",
+                    "Vista de gestión con información, estados y fechas de seguimiento."
                 ],
-                github: "https://github.com/alexisrr11/appMarketDefinitivo"
+                github: "https://github.com/alexisrr11/AppMiAgenda",
+                demo: "https://app-mi-agenda.vercel.app/"
             },
-            turnero: {
-                title: "Practical Session",
-                description: "",
+
+            turnos: {
+                title: "App de turnos médicos",
+                description: "Sistema Full Stack para gestionar médicos, pacientes y turnos.",
                 imagesDesc: [
-                    "Practical Session es una aplicación SaaS multi-tenant compuesta por un software central, una base de datos única y múltiples clientes empresariales. La aplicación no tendrá optimización SEO y está pensada para un flujo aproximado de 20 empresas, cuidando el rendimiento del sistema al compartir una sola base de datos. La seguridad de los datos se garantiza mediante un id_empresarial y tokens JWT, definidos en el archivo .env. La creación de usuarios empresariales y clientes es ilimitada en la versión gratuita; sin embargo, si no se contrata el plan premium dentro de los 6 meses, todos los datos vinculados serán eliminados.El objetivo es ofrecer un software adaptable a cualquier empresa, automatizando la gestión de turnos y permitiendo delegar tareas de agenda de manera eficiente.",
-                    "Registro de empresa",
-                    "Registro de administradores de empresa",
-                    "Dashboard de administradores",
-                    "Registro de clientes",
-                    "Dashboard de clientes"
+                    "Sistema de gestión de turnos médicos desarrollado para administrar pacientes, profesionales, horarios y reservas. Incluye un panel administrativo para organizar la disponibilidad de los médicos y un portal para que los pacientes consulten horarios y soliciten turnos.",
+                    "Vista del sistema para la gestión de pacientes y turnos.",
+                    "Interfaz utilizada por los pacientes para seleccionar profesionales, fechas y horarios disponibles.",
+                    "Calendario administrativo para consultar y organizar los turnos médicos."
                 ],
-                github: "https://github.com/alexisrr11/SaaSTurnero"
+                github: "https://github.com/alexisrr11/MVP-Medi-Turnos",
+                demo: "https://mvp-medi-turnos.vercel.app"
             }
         }
     },
     en: {
         "title": "Portfolio - Full-Stack Developer",
+
         "nav.about": "About me",
         "nav.skills": "Skills",
         "nav.projects": "Projects",
-        "nav.contact": "Contacts",
-        "hero.title": "Hi, I'm Rodriguez Alexis",
+        "nav.education": "Education",
+        "nav.contact": "Contact",
+
+        "hero.title": "Hi, I'm Alexis Rodriguez",
         "hero.subtitle": "Full-Stack Developer with a slight Front-End focus",
-        "hero.descripcion.uno": "I’m passionate about building complete applications, both from a technical perspective and from the business model behind each project. I create modern interfaces and especially enjoy designing user-centered experiences, while also being capable of building endpoints and solid MVC architectures using object-oriented programming in Node.js.",
+
+        "hero.descripcion.uno": "I am passionate about building complete applications, both from a technical perspective and by understanding the business model behind each project. I create modern interfaces and especially enjoy designing user-centered experiences, while also being able to develop endpoints and solid MVC architectures by applying object-oriented programming in Node.js.",
+
         "hero.more": "Read more",
         "hero.less": "Read less",
-        "hero.descripcion.dos": "One of my most valuable learning experiences was developing a medical appointment management system, where I strengthened my ability to design robust architectures and make strategic decisions before starting an MVP. This process taught me how to transform ideas into clear and structured solutions. What sets me apart is my consistency and resilience: I never give up and always work towards achieving each project’s goals, without losing sight of the user experience and the real impact of the solution.",
-        "hero.data": "My Information",
+
+        "hero.descripcion.dos": "One of my greatest learning experiences was developing a medical appointment management system. Throughout the project, I strengthened my ability to organize the architecture of a complete application, maintain a clear file structure, and separate the frontend and backend into layers with well-defined responsibilities. On the backend, I learned to distribute logic across routes, controllers, services, error handling, repositories, types, design patterns, and data access, avoiding the concentration of too many responsibilities in a single file. I also deepened my knowledge of Node.js, Express, TypeScript, and Prisma ORM. On the frontend, I improved the organization of applications built with React, TypeScript, and Tailwind CSS by separating components, hooks, types, constants, styles, and utility functions. I also worked with layouts, pages, reusable components, and centralized backend requests through services or HTTP clients. The project also allowed me to gain experience working with applications deployed in production. I learned how to properly prepare environments before deployment, remove forgotten logs or debugging methods from the code, review deployment and GitHub records to avoid potential security vulnerabilities, manage environment variables, and protect sensitive files. I also prepared local and testing environments using Prisma with SQLite, maintaining a structure that would later facilitate the transition to PostgreSQL. This experience taught me how to plan architectures, manage different environments, anticipate security issues, and understand how a system behaves from local development to production.",
+
+        "hero.data": "My information",
         "hero.download": "Download CV",
+
         "skills.my": "My Skills",
-        "skills.learning": "Currently Learning",
+        "skills.learning": "Currently learning",
+
         "projects.featured": "Featured Projects",
-        "projects.details": "Learn more",
-        "contacts.title": "Contacts",
+        "projects.details": "View details",
+
+        "contacts.title": "Contact",
         "contacts.copy": "Email copied to clipboard!",
+
         "footer.rights": "All rights reserved",
+
         "modal.datas": "Personal Information",
         "modal.location": "Location:",
-        "modal.preparation": "Preparation Time:",
-        "modal.current.job": "Current Job:",
-        "modal.preparation.age": "3 Years",
+        "modal.preparation": "Learning experience:",
+        "modal.current.job": "Current occupation:",
+        "modal.preparation.age": "3 years",
         "modal.languages": "Languages:",
-        "modal.spanish": "spanish: native",
-        "modal.english": "english: (B1)",
-        "modal.portuguese": "portuguese: (A2)",
+        "modal.spanish": "Spanish: Native language",
+        "modal.english": "English: B1",
+        "modal.portuguese": "Portuguese: A2",
         "modal.age": "Age:",
-        "modal.my.age": "31 years",
+        "modal.my.age": "31 years old",
+
         "modal.goals": "Goals",
-        "modal.goals.description": "My goal is to grow as a builder focused on software architecture, designing complete applications where I can make technical decisions regarding structure, scalability, and maintainability. I aim to build real systems that integrate both frontend and backend, prioritizing clear logic, separation of concerns, and solving concrete problems. Currently, I am focused on consolidating a stack based on TypeScript with Next.js, Prisma, and Docker, with the goal of creating robust, deployable applications ready for production environments.",
+
+        "modal.goals.description": "My goal is to continue growing as a builder focused on software architecture, creating complete, well-organized applications that are prepared to scale. I want to deepen my knowledge of Next.js by applying a monorepo architecture that allows me to work with the frontend and backend within the same environment, share types, validations, and reusable logic, reduce duplication, and simplify the maintenance of each project. I also want to incorporate Docker to create consistent, reproducible development and testing environments that closely resemble production. Although I currently work independently and do not need to coordinate different configurations across multiple developers, I believe Docker can help me automate dependencies, reduce configuration errors, and achieve cleaner, safer, and more predictable deployments. My goal is to consolidate a stack based on TypeScript, Next.js, Prisma, PostgreSQL, and Docker, applying proper separation of responsibilities, security best practices, and a clear architecture.",
+
         "modal.description": "Description",
         "modal.technologies": "Technologies",
         "modal.repo": "Repository",
+        "modal.demo": "View demo",
+
+        "education.title": "Education and learning",
+
+        "education.description": "My education combines specialized courses, self-directed learning, and practical experience developing and deploying complete projects.",
+
+        "education.course.label": "Completed course",
+        "education.course.title": "React — Talento Tech",
+        "education.course.institution": "Institution:",
+        "education.course.institutionName": "Ministry of Education of the City of Buenos Aires",
+
+        "education.course.description": "Practical training focused on developing a complete React application, from its initial setup to deployment.",
+
+        "education.course.item1": "Creating React applications from scratch using Vite.",
+        "education.course.item2": "State management using useState and Context API.",
+        "education.course.item3": "Developing dynamic and protected routes for secure and seamless navigation.",
+        "education.course.item4": "Building validated forms and implementing user authentication.",
+        "education.course.item5": "Developing a CRUD system to manage products in an e-commerce project.",
+        "education.course.item6": "Styling applications with Bootstrap and styled-components.",
+        "education.course.item7": "Integrating Firebase and Firestore for data storage.",
+        "education.course.item8": "Deploying the final application to a hosting platform.",
+
+        "education.selfTaught.label": "Self-directed learning",
+        "education.selfTaught.title": "Full-Stack Web Development",
+
+        "education.selfTaught.description": "Continuous learning through documentation, practice, and the development of real-world projects involving frontend, backend, databases, architecture, and deployment.",
+
+        "education.selfTaught.developmentTitle": "Development and architecture",
+        "education.selfTaught.databaseTitle": "Databases",
+        "education.selfTaught.deploymentTitle": "Deployment and production",
+
+        "education.selfTaught.item1": "Developing applications with JavaScript, TypeScript, React, Node.js, and Express.",
+        "education.selfTaught.item2": "Building APIs, endpoints, authentication systems, and backend architectures based on separation of responsibilities.",
+        "education.selfTaught.item3": "Using Prisma ORM, Git, and workflows focused on project maintenance.",
+        "education.selfTaught.item4": "Working with PostgreSQL in deployed applications and production environments.",
+        "education.selfTaught.item5": "Using SQLite as a database for local development, prototypes, and testing environments.",
+        "education.selfTaught.item6": "Configuring and deploying managed PostgreSQL databases with Neon.",
+        "education.selfTaught.item7": "Experience deploying frontend applications with Vercel.",
+        "education.selfTaught.item8": "Deploying APIs and backend services with Render.",
+        "education.selfTaught.item9": "Configuring environment variables, migrations, and connections between the frontend, backend, and database.",
+
+        "education.readMore": "Read more",
+        "education.readLess": "Read less",
+        "education.diploma.loading": "Loading certificate...",
+        "education.diploma.error": "The certificate image could not be loaded.",
+
         projects: {
-            ecommerce: {
-                title: "E-Commerce",
-                description: "Description of the project",
+            abogados: {
+                title: "Law Firm Management App",
+                description: "A web application designed for law firm management.",
+
                 imagesDesc: [
-                    "Saturn is an e-commerce application designed to deliver a dynamic and engaging experience. Its focus is not only on selling products but also on fostering user interaction through a system of purchase modals and like modals, creating a more social and entertaining environment within the shopping process.",
-                    "Product screen with likes",
-                    "Shopping cart in action"
+                    "A system designed to centralize the management of clients, legal cases, tasks, deadlines, and documents within a law firm. The application aims to simplify daily work through clear forms, organized information, and quick access to the most important data.",
+                    "View for managing legal cases, clients, and information related to each matter."
                 ],
-                github: "https://github.com/alexisrr11/newE-commerce"
+
+                github: "https://github.com/alexisrr11/Muestra-para-estudios-juridicos",
+                demo: "https://muestra-para-estudios-juridicos.vercel.app/"
             },
-            multiuser: {
-                title: "Multi-User",
-                description: "Multi-user web application with React and Node.js",
+
+            agenda: {
+                title: "Contact Manager",
+                description: "A web application for registering, organizing, and managing contacts.",
+
                 imagesDesc: [
-                    "A collaborative list application that allows multiple users to create, organize, and manage tasks or shopping items in real time. Although it is primarily designed to facilitate the organization of family, group, or team shopping, its flexible structure makes it a useful tool for any type of planning: from work projects to personal reminders.",
-                    "Login",
-                    "Registration"
+                    "A contact management application that allows users to register companies or individuals, store phone numbers, assign statuses, and schedule follow-up dates. The system simplifies contact organization and centralizes the information needed for future communication.",
+                    "Form for registering and editing contact information.",
+                    "Management view with contact information, statuses, and follow-up dates."
                 ],
-                github: "https://github.com/alexisrr11/appMarketDefinitivo"
+
+                github: "https://github.com/alexisrr11/AppMiAgenda",
+                demo: "https://app-mi-agenda.vercel.app/"
             },
-            turnero: {
-                title: "Practical Session",
-                description: "System for managing appointments",
+
+            turnos: {
+                title: "Medical Appointment Management App",
+                description: "A Full-Stack system for managing doctors, patients, and appointments.",
+
                 imagesDesc: [
-                    "Practical Session is a multi-tenant SaaS application composed of a central software, a single database, and multiple business clients. The application will not include SEO optimization and is designed to handle an approximate flow of 20 companies, ensuring system performance while sharing a single database. Data security is guaranteed through a business ID (id_empresarial) and JWT tokens, defined in the .end file. The creation of business users and company clients is unlimited in the free version; however, if the premium plan is not purchased within 6 months, all associated data will be deleted. The goal is to provide adaptable software for any company, automating appointment management and enabling efficient delegation of scheduling tasks",
-                    "Company Registration",
-                    "Dashboard"
+                    "A medical appointment management system developed to administer patients, healthcare professionals, schedules, and bookings. It includes an administrative dashboard for organizing doctors' availability and a patient portal where users can view available times and request appointments.",
+                    "System view for managing patients and appointments.",
+                    "Patient interface for selecting healthcare professionals, dates, and available appointment times.",
+                    "Administrative calendar for viewing and organizing medical appointments."
                 ],
-                github: "https://github.com/alexisrr11/SaaSTurnero"
+
+                github: "https://github.com/alexisrr11/MVP-Medi-Turnos",
+                demo: "https://mvp-medi-turnos.vercel.app"
             }
         }
     },
     pt: {
         "title": "Portfólio - Desenvolvedor Full-Stack",
+
         "nav.about": "Sobre mim",
         "nav.skills": "Habilidades",
         "nav.projects": "Projetos",
-        "nav.contact": "Contatos",
-        "hero.title": "Olá, sou Rodriguez Alexis",
-        "hero.subtitle": "Desenvolvedor Full-Stack com foco em Front-End",
-        "hero.descripcion.uno": "Sou apaixonado por construir aplicações completas, tanto do ponto de vista técnico quanto do modelo de negócio por trás de cada projeto. Crio interfaces modernas e gosto especialmente de projetar experiências centradas no usuário, além de ter experiência na criação de endpoints e arquiteturas MVC sólidas utilizando programação orientada a objetos em Node.js.",
+        "nav.education": "Formação",
+        "nav.contact": "Contato",
+
+        "hero.title": "Olá, sou Alexis Rodriguez",
+        "hero.subtitle": "Desenvolvedor Full-Stack com leve orientação para Front-End",
+
+        "hero.descripcion.uno": "Sou apaixonado por construir aplicações completas, tanto na parte técnica quanto na compreensão do modelo de negócio por trás de cada projeto. Crio interfaces modernas e gosto especialmente de projetar experiências centradas no usuário, além de também saber desenvolver endpoints e arquiteturas MVC sólidas, aplicando programação orientada a objetos em Node.js.",
+
         "hero.more": "Ler mais",
         "hero.less": "Ler menos",
-        "hero.descripcion.dos": "Um dos meus maiores aprendizados foi o desenvolvimento de um sistema de gestão de consultas médicas, onde aperfeiçoei minha capacidade de projetar arquiteturas robustas e tomar decisões estratégicas antes de iniciar um MVP. Esse processo me ensinou a transformar ideias em soluções claras e estruturadas. O que me diferencia é minha constância e resiliência: nunca desisto e sempre trabalho para alcançar os objetivos de cada projeto, sem perder de vista a experiência do usuário e o impacto real da solução.",
+
+        "hero.descripcion.dos": "Um dos meus maiores aprendizados foi o desenvolvimento de um sistema de gestão de consultas médicas. Ao longo do projeto, fortalecei minha capacidade de organizar a arquitetura de uma aplicação completa, manter uma estrutura clara de arquivos e separar o frontend e o backend em camadas com responsabilidades bem definidas. No backend, aprendi a distribuir a lógica entre rotas, controladores, serviços, tratamento de erros, repositórios, tipagens, padrões de projeto e acesso a dados, evitando concentrar responsabilidades demais em um único arquivo. Também aprofundei meus conhecimentos em Node.js, Express, TypeScript e Prisma ORM. No frontend, aprimorei a organização de aplicações com React, TypeScript e Tailwind CSS, separando componentes, hooks, tipos, constantes, estilos e funções auxiliares. Também trabalhei com a divisão entre layouts, páginas, componentes reutilizáveis e a centralização das chamadas ao backend por meio de serviços ou clientes HTTP. O projeto também me permitiu adquirir experiência trabalhando com aplicações implantadas em produção. Aprendi a preparar corretamente os ambientes antes da implantação, remover logs ou métodos de depuração esquecidos no código, revisar registros de implantação e do GitHub para evitar possíveis vulnerabilidades de segurança, gerenciar variáveis de ambiente e proteger arquivos sensíveis. Além disso, preparei ambientes locais e de teste utilizando Prisma com SQLite, mantendo uma estrutura que facilitasse posteriormente a transição para PostgreSQL. Essa experiência me ensinou a planejar arquiteturas, gerenciar diferentes ambientes, antecipar problemas de segurança e compreender como um sistema se comporta desde o desenvolvimento local até seu funcionamento em produção.",
+
         "hero.data": "Meus dados",
         "hero.download": "Baixar CV",
+
         "skills.my": "Minhas habilidades",
         "skills.learning": "Em aprendizado",
+
         "projects.featured": "Projetos em destaque",
         "projects.details": "Ver detalhes",
-        "contacts.title": "Contatos",
+
+        "contacts.title": "Contato",
         "contacts.copy": "E-mail copiado para a área de transferência!",
+
         "footer.rights": "Todos os direitos reservados",
-        "modal.datas": "Dados Pessoais",
+
+        "modal.datas": "Dados pessoais",
         "modal.location": "Localização:",
-        "modal.preparation": "Tempo de preparação",
+        "modal.preparation": "Tempo de preparação:",
         "modal.current.job": "Trabalho atual:",
         "modal.preparation.age": "3 anos",
         "modal.languages": "Idiomas:",
         "modal.spanish": "Espanhol: Língua nativa",
-        "modal.english": "Inglês: (B1)",
-        "modal.portuguese": "Português: (A2)",
+        "modal.english": "Inglês: B1",
+        "modal.portuguese": "Português: A2",
         "modal.age": "Idade:",
         "modal.my.age": "31 anos",
+
         "modal.goals": "Objetivos",
-        "modal.goals.description": "Meu objetivo é me desenvolver como um builder focado em arquitetura de software, projetando aplicações completas onde eu possa tomar decisões técnicas sobre estrutura, escalabilidade e manutenibilidade. Busco construir sistemas reais que integrem frontend e backend, priorizando clareza na lógica, separação de responsabilidades e a resolução de problemas concretos. Atualmente, estou focado em consolidar um stack baseado em TypeScript com Next.js, Prisma e Docker, com o objetivo de criar aplicações robustas, prontas para deploy e adequadas para ambientes de produção.",
+
+        "modal.goals.description": "Meu objetivo é continuar me desenvolvendo como builder focado em arquitetura de software, criando aplicações completas, organizadas e preparadas para crescer. Busco aprofundar meus conhecimentos em Next.js por meio de uma arquitetura monorepo que me permita trabalhar com frontend e backend dentro de um único ambiente, compartilhar tipos, validações e lógica reutilizável, reduzir duplicações e simplificar a manutenção de cada projeto. Também quero incorporar Docker para criar ambientes de desenvolvimento e teste consistentes, reproduzíveis e próximos da produção. Embora atualmente eu trabalhe de forma individual e não precise coordenar diferentes configurações entre vários desenvolvedores, considero que o Docker pode me ajudar a automatizar dependências, reduzir erros de configuração e alcançar implantações mais limpas, seguras e previsíveis. Minha meta é consolidar um stack baseado em TypeScript, Next.js, Prisma, PostgreSQL e Docker, aplicando uma correta separação de responsabilidades, boas práticas de segurança e uma arquitetura clara.",
+
         "modal.description": "Descrição",
         "modal.technologies": "Tecnologias",
         "modal.repo": "Repositório",
+        "modal.demo": "Ver demonstração",
+
+        "education.title": "Formação e aprendizagem",
+
+        "education.description": "Minha formação combina cursos especializados, aprendizagem autodidata e experiência prática no desenvolvimento e implantação de projetos completos.",
+
+        "education.course.label": "Curso concluído",
+        "education.course.title": "React — Talento Tech",
+        "education.course.institution": "Instituição:",
+        "education.course.institutionName": "Ministério da Educação da Cidade de Buenos Aires",
+
+        "education.course.description": "Formação prática orientada ao desenvolvimento de uma aplicação completa com React, desde sua criação até a implantação.",
+
+        "education.course.item1": "Criação de aplicações React do zero utilizando Vite.",
+        "education.course.item2": "Gerenciamento de estado utilizando useState e Context API.",
+        "education.course.item3": "Desenvolvimento de rotas dinâmicas e protegidas para uma navegação segura e fluida.",
+        "education.course.item4": "Construção de formulários com validações e autenticação de usuários.",
+        "education.course.item5": "Desenvolvimento de um CRUD para gerenciar produtos em um projeto de e-commerce.",
+        "education.course.item6": "Estilização de aplicações com Bootstrap e styled-components.",
+        "education.course.item7": "Integração do Firebase e Firestore para armazenamento de dados.",
+        "education.course.item8": "Implantação da aplicação final em uma plataforma de hospedagem.",
+
+        "education.selfTaught.label": "Formação autodidata",
+        "education.selfTaught.title": "Desenvolvimento Web Full Stack",
+
+        "education.selfTaught.description": "Aprendizagem contínua por meio de documentação, prática e desenvolvimento de projetos reais, abrangendo frontend, backend, bancos de dados, arquitetura e implantação.",
+
+        "education.selfTaught.developmentTitle": "Desenvolvimento e arquitetura",
+        "education.selfTaught.databaseTitle": "Bancos de dados",
+        "education.selfTaught.deploymentTitle": "Implantação e produção",
+
+        "education.selfTaught.item1": "Desenvolvimento de aplicações com JavaScript, TypeScript, React, Node.js e Express.",
+        "education.selfTaught.item2": "Construção de APIs, endpoints, autenticação e arquiteturas backend baseadas na separação de responsabilidades.",
+        "education.selfTaught.item3": "Uso do Prisma ORM, Git e fluxos de trabalho orientados à manutenção de projetos.",
+        "education.selfTaught.item4": "Trabalho com PostgreSQL em aplicações implantadas e ambientes de produção.",
+        "education.selfTaught.item5": "Uso do SQLite como banco de dados para desenvolvimento local, protótipos e ambientes de teste.",
+        "education.selfTaught.item6": "Configuração e implantação de bancos de dados PostgreSQL gerenciados com Neon.",
+        "education.selfTaught.item7": "Experiência na implantação de aplicações frontend com Vercel.",
+        "education.selfTaught.item8": "Implantação de APIs e serviços backend com Render.",
+        "education.selfTaught.item9": "Configuração de variáveis de ambiente, migrações e conexões entre frontend, backend e banco de dados.",
+
+        "education.readMore": "Ler mais",
+        "education.readLess": "Ler menos",
+        "education.diploma.loading": "Carregando certificado...",
+        "education.diploma.error": "Não foi possível carregar a imagem do certificado.",
+
         projects: {
-            ecommerce: {
-                title: "Saturn E-Commerce",
-                description: "Descrição do projeto",
+            abogados: {
+                title: "Aplicação para escritórios de advocacia",
+                description: "Aplicação web voltada para a gestão de escritórios de advocacia.",
+
                 imagesDesc: [
-                    "Saturn é um aplicativo de comércio eletrônico projetado para oferecer uma experiência dinâmica e participativa. Seu foco não é apenas vender produtos, mas também gerar interação entre os usuários por meio de um sistema de modais de compra e modais de curtidas, criando um ambiente mais social e divertido dentro do processo de compra.",
-                    "Tela de produtos com likes",
-                    "Carrinho de compras em ação"
+                    "Sistema projetado para centralizar a gestão de clientes, processos, tarefas, prazos e documentos de um escritório de advocacia. A aplicação busca simplificar o trabalho diário por meio de formulários claros, informações organizadas e acesso rápido aos dados mais importantes.",
+                    "Tela para administrar processos, clientes e informações relacionadas a cada caso."
                 ],
-                github: "https://github.com/alexisrr11/newE-commerce"
+
+                github: "https://github.com/alexisrr11/Muestra-para-estudios-juridicos",
+                demo: "https://muestra-para-estudios-juridicos.vercel.app/"
             },
-            multiuser: {
-                title: "Multi-User",
-                description: "Descrição do projeto",
+
+            agenda: {
+                title: "Agenda de contatos",
+                description: "Aplicação web para registrar, organizar e gerenciar contatos.",
+
                 imagesDesc: [
-                    "Um aplicativo de listas colaborativas que permite a vários usuários criar, organizar e gerenciar tarefas ou compras em tempo real. Embora tenha sido projetado principalmente para facilitar a organização de compras familiares, em grupo ou em equipe, sua estrutura flexível o torna uma ferramenta útil para qualquer tipo de planejamento: desde projetos de trabalho até lembretes pessoais.",
-                    "Login",
-                    "Registro"
+                    "Aplicação de gestão de contatos que permite registrar empresas ou pessoas, armazenar números de telefone, definir estados e programar datas de acompanhamento. O sistema facilita a organização dos contatos e centraliza as informações necessárias para futuras comunicações.",
+                    "Formulário para registrar e editar as informações dos contatos.",
+                    "Tela de gestão com informações, estados e datas de acompanhamento."
                 ],
-                github: "https://github.com/alexisrr11/appMarketDefinitivo"
+
+                github: "https://github.com/alexisrr11/AppMiAgenda",
+                demo: "https://app-mi-agenda.vercel.app/"
             },
-            turnero: {
-                title: "Practical Session",
-                description: "Sistema de gestão de agendamentos",
+
+            turnos: {
+                title: "Aplicação de consultas médicas",
+                description: "Sistema Full Stack para gerenciar médicos, pacientes e consultas.",
+
                 imagesDesc: [
-                    "Practical Session é uma aplicação SaaS multi-tenant composta por um software central, um banco de dados único e múltiplos clientes empresariais. A aplicação não terá otimização de SEO e foi projetada para suportar um fluxo aproximado de 20 empresas, garantindo o desempenho do sistema ao compartilhar um único banco de dados.A segurança dos dados é garantida por meio de um id_empresarial e tokens JWT, definidos no arquivo .env. A criação de usuários empresariais e clientes é ilimitada na versão gratuita; no entanto, caso o plano premium não seja contratado dentro de 6 meses, todos os dados associados serão excluídos.O objetivo é oferecer um software adaptável a qualquer empresa, automatizando a gestão de agendamentos e permitindo a delegação eficiente de tarefas de agenda.",
-                    "Registro de empresa",
-                    "Dashboard"
+                    "Sistema de gestão de consultas médicas desenvolvido para administrar pacientes, profissionais, horários e reservas. Inclui um painel administrativo para organizar a disponibilidade dos médicos e um portal para que os pacientes consultem horários disponíveis e solicitem consultas.",
+                    "Tela do sistema para a gestão de pacientes e consultas.",
+                    "Interface utilizada pelos pacientes para selecionar profissionais, datas e horários disponíveis.",
+                    "Calendário administrativo para consultar e organizar as consultas médicas."
                 ],
-                github: "https://github.com/alexisrr11/SaaSTurnero"
+
+                github: "https://github.com/alexisrr11/MVP-Medi-Turnos",
+                demo: "https://mvp-medi-turnos.vercel.app"
             }
         }
     }

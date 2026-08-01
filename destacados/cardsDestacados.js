@@ -21,8 +21,7 @@ export function abrirModal(projectKey, imagenes = [], tecnologias = [], github) 
     const descripcion = t.description;
     const descripciones = t.imagesDesc;
     const githubLink = t.github;
-
-    console.log(githubLink);
+    const demoLink = t.demo;
 
     currentProject = { projectKey, imagenes, tecnologias, github };
 
@@ -66,26 +65,45 @@ export function abrirModal(projectKey, imagenes = [], tecnologias = [], github) 
                 <div class="flex flex-wrap gap-2 my-2">
                     ${tecnologiasHTML}
                 </div>
-                <div class="flex gap-3 mt-2">
-                    <a href="${githubLink}"
-                    class="bg-gray-700 rounded-lg p-2 flex items-center gap-2">
-                        ${translations[lang]["modal.repo"]}
-                        <i class="bxl bx-github text-2xl"></i>
-                    </a>
+                                <div class="flex flex-wrap gap-3 mt-2">
+                    ${
+                        githubLink
+                            ? `
+                                <a
+                                    href="${githubLink}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="bg-gray-700 rounded-lg p-2 flex items-center gap-2 hover:bg-gray-600"
+                                >
+                                    ${translations[lang]["modal.repo"]}
+                                    <i class="bxl bx-github text-2xl"></i>
+                                </a>
+                            `
+                            : ""
+                    }
+                
+                    ${
+                        demoLink
+                            ? `
+                                <a
+                                    href="${demoLink}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="bg-blue-600 rounded-lg p-2 flex items-center gap-2 hover:bg-blue-500"
+                                >
+                                    <span>
+                                        ${translations[lang]["modal.demo"] || "Ver demo"}
+                                    </span>
                     
+                                    <i class="bxf bx-arrow-in-right-square-half text-2xl"></i>
+                                </a>
+                            `
+                            : ""
+                    }
                 </div>
             </div>
         </div>
     `;
-
-    /*
-    Futuro Demo:
-    <a href="#"
-    class="bg-blue-600 rounded-lg p-2 flex items-center gap-2">
-        <span>Demo</span>
-        <i class="bxf bx-arrow-in-right-square-half text-2xl"></i>
-    </a>
-    */
 
     contenedorCards.appendChild(contenedor);
 
@@ -103,66 +121,68 @@ export function abrirModal(projectKey, imagenes = [], tecnologias = [], github) 
 }
 
 //Botones
-btnECommerce.addEventListener("click", (e) => {
+btnMultiUser?.addEventListener("click", (e) => {
     e.stopPropagation();
+
     abrirModal(
-        "ecommerce",
+        "agenda",
         [
-            "./images/e-commerce.png",
-            "./images/e-commerce(likes).png",
-            "./images/e-commerce(carritoCompras).png"
+            "./images/agenda-1.png",
+            "./images/agenda-2.png",
+            "./images/agenda-3.png"
         ],
         [
-            '<i class="text-4xl text-orange-600 bxl bx-html5"></i>',
+            '<i class="text-4xl text-blue-600 bxl bx-react"></i>',
             '<i class="text-4xl text-blue-500 bxl bx-css3"></i>',
-            '<i class="text-4xl text-yellow-400 bxl bx-javascript"></i>'
-        ],
-        "https://github.com/alexisrr11/HeladeriaDulceNieve"
+            '<i class="text-4xl text-blue-400 bxl bx-typescript"></i>',
+            '<i class="text-4xl text-green-400 bxl bx-nodejs"></i>',
+            '<i class="text-4xl text-gray-400 bxl bx-express-js"></i>',
+            '<i class="text-4xl text-violet-400 bxl bx-prisma-orm"></i>',
+            '<i class="text-4xl text-blue-400 bxl bx-postgresql"></i>'
+
+        ]
     );
 });
 
-btnMultiUser.addEventListener("click", (e) => {
+btnECommerce?.addEventListener("click", (e) => {
     e.stopPropagation();
+
     abrirModal(
-        "multiuser",
+        "abogados",
         [
-            "./images/app market.png",
-            "./images/appMarket(login).png",
-            "./images/appMarket(registro).png",
+            "./images/abogados-1.png",
+            "./images/abogados-2.png"
         ],
         [
-            '<i class="text-4xl text-orange-600 bxl bx-html5"></i>',
+            '<i class="text-4xl text-blue-600 bxl bx-react"></i>',
             '<i class="text-4xl text-blue-400 bxl bx-tailwind-css"></i>',
-            '<i class="text-4xl text-yellow-400 bxl bx-javascript"></i>',
+            '<i class="text-4xl text-blue-500 bxl bx-typescript"></i>',
             '<i class="text-4xl text-green-400 bxl bx-nodejs"></i>',
             '<i class="text-4xl text-gray-400 bxl bx-express-js"></i>',
-            '<i class="text-4xl text-blue-400 bxl bx-postgresql"></i>'
-        ],
-        "https://github.com/alexisrr11/HeladeriaDulceNieve"
+            '<i class="text-4xl text-violet-400 bxl bx-prisma-orm"></i>'
+        ]
     );
 });
 
-btnTurnero.addEventListener("click", (e) => {
+btnTurnero?.addEventListener("click", (e) => {
     e.stopPropagation();
+
     abrirModal(
-        "turnero",
+        "turnos",
         [
-            "./images/appTurnos(suscripcion).png",
-            "./images/appTurnos(registroEmpresa).png",
-            "./images/appTurnos(registroAdmin).png",
-            "./images/appTurnos(dashboardEmpresa).png",
-            "./images/appTurnos(registroCliente).png",
-            "./images/appTurnos(dashboardCliente).png"
+            "./images/medi-1.png",
+            "./images/medi-2.png",
+            "./images/medi-3.png",
+            "./images/medi-4.png"
         ],
         [
-            '<i class="text-4xl text-orange-600 bxl bx-html5"></i>',
+            '<i class="text-4xl text-blue-600 bxl bx-react"></i>',
             '<i class="text-4xl text-blue-400 bxl bx-tailwind-css"></i>',
-            '<i class="text-4xl text-yellow-400 bxl bx-javascript"></i>',
+            '<i class="text-4xl text-blue-500 bxl bx-typescript"></i>',
             '<i class="text-4xl text-green-400 bxl bx-nodejs"></i>',
             '<i class="text-4xl text-gray-400 bxl bx-express-js"></i>',
-            '<i class="text-4xl text-blue-400 bxl bx-postgresql"></i>'
-        ],
-        "https://github.com/alexisrr11/HeladeriaDulceNieve"
+            '<i class="text-4xl text-violet-400 bxl bx-prisma-orm"></i>'
+        ]
     );
 });
 
