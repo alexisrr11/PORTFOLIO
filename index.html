@@ -582,7 +582,26 @@
 
     <!-- Modal Datos Personales -->
     <div id="modal-datos" class="hidden fixed top-6 h-[90vh] overflow-y-auto w-full bg-gray-900 text-center p-6 z-50">
-        <button id="btn-cerrar-datos" class="fixed top-10 right-10 font-bold text-xl hover:text-blue-400">x</button>
+        <button
+                id="btn-cerrar-datos"
+                type="button"
+                class="
+                    fixed top-8 right-5 z-[110]
+                    flex h-11 w-11
+                    items-center justify-center
+                    rounded-full
+                    bg-gray-800
+                    text-3xl text-white
+                    shadow-lg
+                    transition-colors
+                    hover:bg-red-600
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-white
+                "
+            >
+                &times;
+            </button>
         <h3 data-i18n="modal.datas" class="text-3xl font-semibold mb-8">Datos Personales</h3>
         <div class="flex justify-around mb-4 md:flex-row flex-col items-center gap-8">
             <div class="text-start text-gray-300">
@@ -642,7 +661,26 @@
 
     <!-- Modal Pryectos -->
     <div id="modal-proyectos" class="hidden fixed top-0 h-screen w-full bg-gray-900 z-50">
-        <button id="btn-cerrar-modal" class="fixed top-8 right-12 font-bold text-xl hover:text-blue-500">x</button>
+        <button
+                id="btn-cerrar-modal"
+                type="button"
+                class="
+                    fixed top-4 right-6 z-[110]
+                    flex h-11 w-11
+                    items-center justify-center
+                    rounded-full
+                    bg-gray-800
+                    text-3xl text-white
+                    shadow-lg
+                    transition-colors
+                    hover:bg-red-600
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-white
+                "
+            >
+                &times;
+            </button>
         <div id="contendor-proyecto"></div>
     </div>
 
