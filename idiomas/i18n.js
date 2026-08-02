@@ -15,6 +15,7 @@ export const translations = {
         "nav.about": "Acerca de mí",
         "nav.skills": "Habilidades",
         "nav.projects": "Proyectos",
+        "nav.study": "Formación",
         "nav.contact": "Contactos",
         "hero.title": "Hola, soy Rodriguez Alexis",
         "hero.subtitle": "Desarrollador Full-Stack con leve orientación al Front-End",
@@ -135,7 +136,7 @@ export const translations = {
         "nav.about": "About me",
         "nav.skills": "Skills",
         "nav.projects": "Projects",
-        "nav.education": "Education",
+        "nav.study": "Education",
         "nav.contact": "Contact",
 
         "hero.title": "Hi, I'm Alexis Rodriguez",
@@ -277,7 +278,7 @@ export const translations = {
         "nav.about": "Sobre mim",
         "nav.skills": "Habilidades",
         "nav.projects": "Projetos",
-        "nav.education": "Formação",
+        "nav.study": "Formação",
         "nav.contact": "Contato",
 
         "hero.title": "Olá, sou Alexis Rodriguez",

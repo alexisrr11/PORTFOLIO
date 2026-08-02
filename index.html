@@ -55,13 +55,15 @@
     <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-900 text-gray-100">
+<body id="body" class="bg-gray-900 text-gray-100">
     <!-- Navegación -->
     <nav class="bg-blue-900/20 backdrop-blur-sm shadow-md fixed w-full z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <h1 class="text-xl font-bold text-gray-100">Devxis Desing</h1>
+                    <a href="#body">
+                        <h1 class="text-xl font-bold text-gray-100">Devxis Desing</h1>
+                    </a>
                 </div>
                 <button id="btn-menu" class="md:hidden">
                     <i class="bx bx-menu-select flex items-center text-3xl text-white"></i>
@@ -70,7 +72,7 @@
                     <a data-i18n="nav.about" href="#acerca" class="text-gray-300 hover:text-blue-400">Acerca de mí</a>
                     <a data-i18n="nav.skills" href="#skills" class="text-gray-300 hover:text-blue-400">Habilidades</a>
                     <a data-i18n="nav.projects" href="#proyectos" class="text-gray-300 hover:text-blue-400">Proyectos</a>
-                    <a data-i18n="nav.projects" href="#formacion" class="text-gray-300 hover:text-blue-400">Formación</a>
+                    <a data-i18n="nav.study" href="#formacion" class="text-gray-300 hover:text-blue-400">Formación</a>
                     <a data-i18n="nav.contact" href="#contactos" class="text-gray-300 hover:text-blue-400">Contactos</a>
                     <button id="btn-idiomas-full" class="flex items-center text-2xl hover:text-blue-400">
                         <i class="bxf bx-translate"></i>
@@ -94,7 +96,7 @@
                     <a data-i18n="nav.about" href="#acerca" class="text-gray-300 hover:text-blue-400">Acerca de mí</a>
                     <a data-i18n="nav.skills" href="#skills" class="text-gray-300 hover:text-blue-400">Habilidades</a>
                     <a data-i18n="nav.projects" href="#proyectos" class="text-gray-300 hover:text-blue-400">Proyectos</a>
-                    <a data-i18n="nav.projects" href="#formacion" class="text-gray-300 hover:text-blue-400">Formación</a>
+                    <a data-i18n="nav.study" href="#formacion" class="text-gray-300 hover:text-blue-400">Formación</a>
                     <a data-i18n="nav.contact" href="#contactos" class="text-gray-300 hover:text-blue-400">Contactos</a>
                     <button id="btn-idiomas-md" class="flex items-center text-2xl hover:text-blue-400">
                         <i class="bxf bx-translate"></i>
@@ -294,7 +296,7 @@
 
                     <div class="p-6">
                         <div class="flex items-start gap-4">
-                            <div class="flex items-center justify-center min-w-14 h-14 rounded-lg bg-blue-500/10">
+                            <div class="flex items-center justify-center min-w-14 h-14 rounded-full bg-blue-300/10">
                                 <i class="text-4xl text-blue-400 bxl bx-react"></i>
                             </div>
 
@@ -410,7 +412,7 @@
                 <!-- Formación autodidacta -->
                 <article class="bg-gray-700 p-6 rounded-lg shadow-md border border-gray-600">
                     <div class="flex items-start gap-4">
-                        <div class="flex items-center justify-center min-w-14 h-14 rounded-lg bg-green-500/10">
+                        <div class="flex items-center justify-center min-w-14 h-14 rounded-full bg-green-300/10">
                             <i class="text-4xl text-green-400 bxf bx-book-open"></i>
                         </div>
 
@@ -607,7 +609,7 @@
             <div class="text-start text-gray-300">
                 <h4>
                     <span data-i18n="modal.location"></span>
-                    <span class="font-semibold text-white">Buenos Aires, Argentina</span>
+                    <span class="font-semibold text-white">Almirante Brown, Buenos Aires, Argentina</span>
                 </h4>
                 <h4 class="pt-3">
                     <span data-i18n="modal.preparation"></span>
